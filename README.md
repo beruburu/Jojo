@@ -4,7 +4,7 @@ COMP1536 - Webpage Project
 Meghan
 -Account Pages
 -Edit Account
--Contact Us
+-Sign In/Register
 
 Haley
 -Base CSS
@@ -17,6 +17,7 @@ Teresa
 Lacelei
 -FAQs
 -Booking
+-Contact Us
 
 Ariana
 -Testimonials
