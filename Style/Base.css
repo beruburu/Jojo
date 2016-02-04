@@ -6,23 +6,37 @@ body {
 }
 #signin {
     background-color: #74A495;
+    text-align: right;
 }
 h1 {
     background-color: #B0E5DC;
     color: #f07877;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-top: 0;
 }
 nav {
     background-color: #B0E5DC;
+    text-align: center;
+    position: static;
 }
 nav ul {
     list-style-type: none;
+    margin-bottom: 0;
 }
 nav ul li {
     display:  inline-block;
+    position: relative;
+    padding-right:200px;
 }
 #signin a {
     text-decoration: none;
     color: #f07877;
+}
+#signin a:hover {
+    color: #bea488;
+    text-decoration: underline;
 }
 .dropdown {
     position: relative;
@@ -31,7 +45,9 @@ nav ul li {
 .dropdowncontent {
     display: none;
     position: absolute;
-
+}
+.dropdowncontent ul li {
+    padding-right: 10px;
 }
 .dropdown:hover .dropdowncontent{
     display: inline-block;
