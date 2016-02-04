@@ -1,0 +1,87 @@
+body {
+    background-color: #ffffff;
+    font-family: Helvetica, Calibri, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+#signin {
+    background-color: #74A495;
+}
+h1 {
+    background-color: #B0E5DC;
+    color: #f07877;
+}
+nav {
+    background-color: #B0E5DC;
+}
+nav ul {
+    list-style-type: none;
+}
+nav ul li {
+    display:  inline-block;
+}
+#signin a {
+    text-decoration: none;
+    color: #f07877;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdowncontent {
+    display: none;
+    position: absolute;
+
+}
+.dropdown:hover .dropdowncontent{
+    display: inline-block;
+}
+h2 {
+    color: #f07877;
+}
+#nav{
+    list-style:none;
+    font-weight:bold;
+    margin-bottom:10px;
+    float:left;
+    width:100%;
+}
+#nav a{
+    display:block;
+    padding:5px;
+    color:#f07877;
+    background:#B0E5DC;
+    text-decoration:none;
+}
+#nav a:hover{
+    color:#bea488;
+    text-decoration:underline;
+}
+/*--- DROPDOWN ---*/
+#nav ul{
+    list-style:none;
+    position:absolute;
+    left:-9999px; /* Hide off-screen when not needed (this is more accessible than display:none;) */
+    background-color: #B0E5DC;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+}
+#nav li:hover ul{ 
+    left:0; 
+}
+#nav li:hover ul li a:hover{
+    background:#B0E5DC;
+    text-decoration: underline;
+}
+#leftcol {
+    float: left; 
+    width: 50%;
+    padding-left: 5%;
+}
+#rightcol {
+    float: left;
+}
+footer {
+    clear: left;
+    text-align: center;
+}
