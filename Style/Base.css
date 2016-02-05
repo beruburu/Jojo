@@ -5,21 +5,27 @@ body {
     padding: 0;
 }
 #signin {
-    background-color: #74A495;
+    background-color: #ffffff;
     text-align: right;
+    padding: 10px 10px;
+    margin-bottom: 0;
 }
 h1 {
     background-color: #B0E5DC;
     color: #f07877;
     text-align: center;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    margin-top: 0;
+    padding: 30px;
+    margin-top: 0px;
+}
+header {
+    margin-top: 0px;
 }
 nav {
-    background-color: #B0E5DC;
+    background-color: #ffffff;
     text-align: center;
-    position: static;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
 }
 nav ul {
     list-style-type: none;
@@ -28,14 +34,20 @@ nav ul {
 nav ul li {
     display:  inline-block;
     position: relative;
-    padding-right:200px;
+    border-right: 3px solid #f07877;
 }
+#nav li {
+    padding: 0px 30px;
+}
+nav ul li:nth-last-child(1) {
+    border-right: 0px none #ffffff;
+} 
 #signin a {
     text-decoration: none;
     color: #f07877;
 }
 #signin a:hover {
-    color: #bea488;
+    color: #74A495;
     text-decoration: underline;
 }
 .dropdown {
@@ -53,7 +65,7 @@ nav ul li {
     display: inline-block;
 }
 h2 {
-    color: #f07877;
+    color: #74A495;
 }
 #nav{
     list-style:none;
@@ -65,12 +77,12 @@ h2 {
 #nav a{
     display:block;
     padding:5px;
-    color:#f07877;
-    background:#B0E5DC;
+    color:#B0E5DC;
+    background:#ffffff;
     text-decoration:none;
 }
 #nav a:hover{
-    color:#bea488;
+    color:#74A495;
     text-decoration:underline;
 }
 /*--- DROPDOWN ---*/
@@ -78,16 +90,20 @@ h2 {
     list-style:none;
     position:absolute;
     left:-9999px; /* Hide off-screen when not needed (this is more accessible than display:none;) */
-    background-color: #B0E5DC;
+    background-color: #ffffff;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     padding: 12px 16px;
 }
 #nav li:hover ul{ 
-    left:0; 
+    left:-63px;
 }
 #nav li:hover ul li a:hover{
-    background:#B0E5DC;
+    background:#ffffff;
     text-decoration: underline;
+}
+#nav li ul li {
+    border-right: 0px none #ffffff;
+    padding: 0px 10px; 
 }
 #leftcol {
     float: left; 
@@ -100,4 +116,9 @@ h2 {
 footer {
     clear: left;
     text-align: center;
+    font-size: 0.8em;
+}
+#content {
+    position: relative;
+    top: 50px;
 }
