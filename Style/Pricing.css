@@ -2,3 +2,39 @@
     color: #f07877;
     text-align: center;
 }
+#basics {
+    border-bottom: 3px solid #f07877;
+    padding-bottom: 20px;
+}
+table {
+    padding-bottom: 10%;
+}
+th {
+    font-family: junction, sans-serif;
+    font-weight: bold;
+    color: #74A495;
+}
+tr:nth-child(even) {
+    background-color: #BEA488;
+}
+#middle {
+    float: left;
+    padding-right: 5%;
+    padding-left: 5%;
+}
+#rightcol {
+    width: 30%;
+    padding-left: 5%;
+}
+#leftcol {
+    width: 30%;
+    padding-left: 0;
+}
+#groom {
+    border-bottom: 3px solid #f07877;
+    padding-bottom: 15%;
+}
+#main {
+    width: 1200px;
+    margin: auto;
+}
