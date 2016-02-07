@@ -2,8 +2,8 @@
 <html lang="en">
     <head>
         <meta charset="utf-8" />
-        <title>Jojo's Dog Grooming</title>
-        <link rel="stylesheet" href="base.css">
+        <title>Jojo's Dog Grooming - Account Edit</title>
+        <link rel="stylesheet" href="Style/base.css">
     </head>
     <body>
         <div id="signin">sign in/register</div>
@@ -32,7 +32,24 @@
 			</div>
             
 			<div id="rightcol">
-				<h2></h2>
+				<h2>Account</h2>
+				<form name="accountEdit" method="post" id="accountEdit">
+					<ul>
+						<fieldset>
+							<legend>Owner</legend>
+							<li><label>First Name: </label><input type="text" name="firstname" id="firstname" required="required"></li>
+							<li><label>Last Name: </label><input type="text" name="lastname" id="lastname" required="required"></li>
+							<li><label>Phone Number: </label><input type="text" name="phone" id="phone" required="required"></li>
+							<li><label>Email: </label><input type="text" name="email" id="email" required="required"></li>
+						</fieldset>
+						<fieldset>
+							<legend>Dog</legend>
+							<li><label>Dog Name: </label><input type="text" name="dogname" id="dogname" required="required"></li>
+							<li><label>Dog Breed: </label><input type="text" name="dogbreed" id="dogbreed" required="required"></li>
+						</fieldset>
+					</ul>
+					Add Dog
+				</form>
 			</div>
         </div>
 		<div id="aside">
