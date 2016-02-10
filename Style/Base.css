@@ -35,7 +35,7 @@ header {
 nav {
     background-color: #ffffff;
     text-align: center;
-    position: fixed;
+    position: relative;
     width: 100%;
     z-index: 1;
 }
@@ -120,11 +120,13 @@ h2 {
 }
 #leftcol {
     float: left; 
-    width: 50%;
-    padding-left: 5%;
+    width: 30%;
+    padding-left: 10%;
 }
 #rightcol {
+    padding-left: 10%;
     float: left;
+    width: 30%;
 }
 footer {
     border-top: 3px solid #f07877;
@@ -135,6 +137,8 @@ footer {
     margin: 30px;
 }
 #content {
+    width: 80%;
+    margin: auto;
     position: relative;
-    top: 70px;
+    margin-bottom: 10%;
 }
