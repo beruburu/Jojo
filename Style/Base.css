@@ -120,13 +120,13 @@ h2 {
 }
 #leftcol {
     float: left; 
-    width: 30%;
+    width: 20%;
     padding-left: 10%;
 }
 #rightcol {
     padding-left: 10%;
     float: left;
-    width: 30%;
+    width: 40%;
 }
 footer {
     border-top: 3px solid #f07877;
