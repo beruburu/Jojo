@@ -1,30 +1,37 @@
 <!DOCTYPE html>
+
 <html lang="en">
     <head>
         <meta charset="utf-8" />
-        <title>Jojo's Dog Grooming - Sign In/Register</title>
-        <link rel="stylesheet" href="Style/Base.css">
+        <title>Jojo's Dog Grooming</title>
+        <link rel="stylesheet" href="style/base.css">
     </head>
+    
     <body>
-        <div id="signin">sign in/register</div>
-        <nav>
-            <div class="dropdown">
-            <ul>
-                <li>About Us</li>
-                <li>Testimonials</li>
-                <li>Services</li>
-					<div class="dropdowncontent">
-						<p>Pricing</p>
-						<p>Booking</p>
-						<p>FAQs</p>
-					</div>
-                <li>Contact Us</li>
-            </ul>
-            </div>
-        </nav>
+        
+        <div id="signin">
+            <a href="signin.html">sign in/register</a>
+        </div> 
         <header>
 			<h1>Jojo's Dog Grooming</h1>
 		</header>
+        <nav>
+            <div class="dropdown">
+                <ul id="nav">
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="#">Testimonials</a></li>
+                    <li><a href="#" id="drop">Services</a>
+					    <div class="dropdowncontent">
+						    <ul>
+                                <li><a href="#">Pricing</a></li>
+					            <li><a href="#">Booking</a></li>
+					            <li><a href="#">FAQs</a></li>
+                            </ul>
+			            </div></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
         
 		<div id="content">
             <div id="leftcol">
@@ -33,9 +40,13 @@
 					<div id="signinform">
 						<form name="signin" method="post" id="signin">
 							<ul>
-								<li><label>Email: </label><input type="text" name="signinemail" id="signinemail" required="required"></li>
-								<li><label>Password: </label><input type="text" name="password" id="password" required="required"></li>
+								<li><label>Email:</label></li>
+								<li><input type="text" name="signinemail" id="signinemail" required="required"></li>
+								<br>
+								<li><label>Password:</label></li>
+								<li><input type="text" name="password" id="password" required="required"></li>
 							</ul>
+							<input type="submit" value="Sign In">
 						</form>
 						<img src="Images/placeholder.jpg" height="350" width="350" alt="placeholder">
 					</div>
@@ -50,25 +61,37 @@
 							<ul>
 								<fieldset>
 									<legend>Owner</legend>
-									<li><label>First Name: </label><input type="text" name="firstname" id="firstname" required="required"></li>
-									<li><label>Last Name: </label><input type="text" name="lastname" id="lastname" required="required"></li>
-									<li><label>Phone Number: </label><input type="text" name="phone" id="phone" required="required"></li>
-									<li><label>Email: </label><input type="text" name="email" id="email" required="required"></li>
+									<li><label>First Name:</label></li>
+									<li><input type="text" name="firstname" id="firstname" required="required"></li>
+									<br>
+									<li><label>Last Name:</label></li>
+									<li><input type="text" name="lastname" id="lastname" required="required"></li>
+									<br>
+									<li><label>Phone Number:</label></li>
+									<li><input type="text" name="phone" id="phone" required="required"></li>
+									<br>
+									<li><label>Email:</label></li>
+									<li><input type="text" name="email" id="email" required="required"></li>
 								</fieldset>
 								<fieldset>
 									<legend>Dog</legend>
-									<li><label>Dog Name: </label><input type="text" name="dogname" id="dogname" required="required"></li>
-									<li><label>Dog Breed: </label><input type="text" name="dogbreed" id="dogbreed" required="required"></li>
+									<li><label>Dog Name:</label></li>
+									<li><input type="text" name="dogname" id="dogname" required="required"></li>
+									<br>
+									<li><label>Dog Breed:</label></li>
+									<li><input type="text" name="dogbreed" id="dogbreed" required="required"></li>
+									<input type="submit" value="Add Dog">
 								</fieldset>
 							</ul>
-							Add Dog
+							<input type="submit" value="Register">
 						</form>
 					</div>
 				</div>
 			</div>
         </div>
 		<footer>
-		
+		    <p>Facebook, Instagram, Twitter</p>
 		</footer>
+        </div>
     </body>
 </html>
