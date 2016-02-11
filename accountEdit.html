@@ -41,28 +41,28 @@
 			</div>
 			<div id="rightcol">
 				<h2>Account</h2>
-				<form name="accountEdit" method="post" id="accountEdit">
+				<form name="accountEdit" method="post" id="accountEdit" action="http://webdevfoundations.net/scripts/formdemo.asp">
 					<ul>
 						<fieldset>
 							<legend>Owner</legend>
-							<li><label>First Name:</label></li>
+							<li><label for="firstname">First Name:</label></li>
 							<li><input type="text" name="firstname" id="firstname" size="60" required="required"></li>
 							<br>
-							<li><label>Last Name:</label></li>
+							<li><label for="lastname">Last Name:</label></li>
 							<li><input type="text" name="lastname" id="lastname" size="60" required="required"></li>
 							<br>
-							<li><label>Phone Number:</label></li>
+							<li><label for="phone">Phone Number:</label></li>
 							<li><input type="text" name="phone" id="phone" size="60" required="required"></li>
 							<br>
-							<li><label>Email:</label></li>
+							<li><label for="email">Email:</label></li>
 							<li><input type="text" name="email" id="email" size="60" required="required"></li>
 						</fieldset>
 						<br>
 						<fieldset>
 							<legend>Dog</legend>
-							<li><label>Dog Name: </label></li>
+							<li><label for="dogname">Dog Name: </label></li>
 							<li><input type="text" name="dogname" id="dogname" size="60" required="required"></li><br>
-							<li><label>Dog Breed: </label></li>
+							<li><label for="dogbreed">Dog Breed: </label></li>
 							<li><input type="text" name="dogbreed" id="dogbreed" size="60" required="required"></li><br>
 							<input type="submit" value="Add Dog">
 						</fieldset>

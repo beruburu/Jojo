@@ -39,12 +39,12 @@
 				<div id="signin">
 					<h2>Sign In</h2>
 					<div id="signinform">
-						<form name="signin" method="post" id="signin">
+						<form name="signin" method="post" id="signin" action="http://webdevfoundations.net/scripts/formdemo.asp">
 							<ul>
-								<li><label>Email:</label></li>
+								<li><label for="email">Email:</label></li>
 								<li><input type="text" name="signinemail" id="signinemail" size="30" required="required"></li>
 								<br>
-								<li><label>Password:</label></li>
+								<li><label for="password">Password:</label></li>
 								<li><input type="password" name="password" id="password" size="30" required="required"></li>
 							</ul>
 							<input type="submit" value="Sign In">
@@ -58,35 +58,35 @@
 				<div id="register">
 					<h2>Register</h2>
 					<div id="registerform">
-						<form name="register" method="post" id="register">
+						<form name="register" method="post" id="register" action="http://webdevfoundations.net/scripts/formdemo.asp">
 							<ul>
 								<fieldset>
 									<legend>Owner</legend>
-									<li><label>First Name:</label></li>
+									<li><label for="firstname">First Name:</label></li>
 									<li><input type="text" name="firstname" id="firstname" size="60" required="required"></li>
 									<br>
-									<li><label>Last Name:</label></li>
+									<li><label for="lastname">Last Name:</label></li>
 									<li><input type="text" name="lastname" id="lastname" size="60" required="required"></li>
 									<br>
-									<li><label>Phone Number:</label></li>
+									<li><label for="phone">Phone Number:</label></li>
 									<li><input type="text" name="phone" id="phone" size="60" required="required"></li>
 									<br>
-									<li><label>Email:</label></li>
+									<li><label for="email">Email:</label></li>
 									<li><input type="text" name="email" id="email" size="60" required="required"></li>
 									<br>
-									<li><label>Password:</label></li>
+									<li><label for="pass">Password:</label></li>
 									<li><input type="password" name="pass" id="pass" size="60" required="required"></li>
 									<br>
-									<li><label>Confirm Password:</label></li>
+									<li><label for"confirmpass">Confirm Password:</label></li>
 									<li><input type="password" name="confirmpass" id="confirmpass" size="60" required="required"></li>
 								</fieldset>
 								<br>
 								<fieldset>
 									<legend>Dog</legend>
-									<li><label>Dog Name:</label></li>
+									<li><label for="dogname">Dog Name:</label></li>
 									<li><input type="text" name="dogname" id="dogname" size="60" required="required"></li>
 									<br>
-									<li><label>Dog Breed:</label></li>
+									<li><label for"dogbreed">Dog Breed:</label></li>
 									<li><input type="text" name="dogbreed" id="dogbreed" size="60" required="required"></li>
 									<br>
 									<li><input type="submit" value="Add Dog"></li>
