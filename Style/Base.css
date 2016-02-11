@@ -31,8 +31,8 @@ h1 {
     width: 100%;
 }
 header {
-    width: fill-available;
     margin-top: 0px;
+    min-width: fill-available;
 }
 nav {
     background-color: #ffffff;
@@ -118,14 +118,17 @@ h2 {
     padding: 0px 10px; 
 }
 #leftcol {
+    margin: 5% 0;
+    padding: 1% 5% 1% 0;
     float: left; 
     width: 30%;
-    padding-left: 10%;
 }
 #rightcol {
-    padding-left: 10%;
     float: left;
     width: 50%;
+    border-left: 3px solid #f07877;
+    padding: 1% 5%;
+    margin: 5% 1%;
 }
 footer {
     border-top: 3px solid #f07877;
@@ -133,12 +136,10 @@ footer {
     text-align: center;
     font-size: 0.8em;
     color: #74A495;
-    margin: 30px;
 }
 #content {
     width: 1024px;
     margin: auto;
-    margin-bottom: 10%;
 }
 header a {
     text-decoration: none;
