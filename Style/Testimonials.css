@@ -1,2 +1,21 @@
-body {
-}
+#gallery { position: relative; }
+
+#gallery ul { width: 250px; 
+			  list-style-type: none; }
+
+#gallery li { display: inline-block; 
+			  padding: 10px; }
+
+#gallery img { border-style: none; }
+
+#gallery a { text-decoration: none; 
+			 color: #333; 
+			 font-style: italic; }
+
+#gallery span { display: none; } 
+   
+#gallery a:hover span { display: block; 
+						position: absolute;
+						top: 10px; 
+						left: 300px; 
+						text-align: center; }
