@@ -4,3 +4,27 @@ li {
 form {
     padding-bottom: 10%;
 }
+legend{
+    display:block;
+    padding:5px;
+    color:#B0E5DC;
+	font-weight:bold;
+	font-size:1.35em;
+    background:#ffffff;
+    text-decoration:none;
+}
+fieldset {
+	border:3px solid #f07877;
+	padding:15px;
+}
+#signinform {
+	border:3px solid #f07877;
+	width:250px;
+	padding: 15px;
+}
+#registerform {
+	text-align:left;
+}
+#registerbutton {
+	padding-left:20px;
+}

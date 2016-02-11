@@ -11,25 +11,25 @@
     <body>
         
         <div id="signin">
-            <a href="signin.html">sign in/register</a>
+            <a href="signIn.html">sign in/register</a>
         </div> 
         <header>
-			<h1>Jojo's Dog Grooming</h1>
+		    <a href="index.html"><h1>Jojo's Dog Grooming</h1></a>
 		</header>
         <nav>
             <div class="dropdown">
                 <ul id="nav">
-                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="aboutUs.html">About Us</a></li>
                     <li><a href="testimonials.html">Testimonials</a></li>
                     <li><a href="services.html" id="drop">Services</a>
 					    <div class="dropdowncontent">
 						    <ul>
-                                <li><a href="pricing.html">Pricing</a></li>
+                                <li><a href="pricing.html">Pricing</a></li>z
 					            <li><a href="booking.html">Booking</a></li>
-					            <li><a href="faqs.html">FAQs</a></li>
+					            <li><a href="FAQs.html">FAQs</a></li>
                             </ul>
 			            </div></li>
-                    <li><a href="contactus.html">Contact Us</a></li>
+                    <li><a href="contactUs.html">Contact Us</a></li>
                 </ul>
             </div>
         </nav>
@@ -49,7 +49,7 @@
 							</ul>
 							<input type="submit" value="Sign In">
 						</form>
-						<img src="Images/placeholder.jpg" height="350" width="350" alt="placeholder">
+						<img src="Images/placeholder.jpg" height="250" width="250" alt="placeholder">
 					</div>
 				</div>
 			</div>
@@ -63,34 +63,37 @@
 								<fieldset>
 									<legend>Owner</legend>
 									<li><label>First Name:</label></li>
-									<li><input type="text" name="firstname" id="firstname" required="required"></li>
+									<li><input type="text" name="firstname" id="firstname" size="60" required="required"></li>
 									<br>
 									<li><label>Last Name:</label></li>
-									<li><input type="text" name="lastname" id="lastname" required="required"></li>
+									<li><input type="text" name="lastname" id="lastname" size="60" required="required"></li>
 									<br>
 									<li><label>Phone Number:</label></li>
-									<li><input type="text" name="phone" id="phone" required="required"></li>
+									<li><input type="text" name="phone" id="phone" size="60" required="required"></li>
 									<br>
 									<li><label>Email:</label></li>
-									<li><input type="text" name="email" id="email" required="required"></li>
+									<li><input type="text" name="email" id="email" size="60" required="required"></li>
 									<br>
 									<li><label>Password:</label></li>
-									<li><input type="password" name="pass" id="pass" required="required"></li>
+									<li><input type="password" name="pass" id="pass" size="60" required="required"></li>
 									<br>
 									<li><label>Confirm Password:</label></li>
-									<li><input type="password" name="confirmpass" id="confirmpass" required="required"></li>
+									<li><input type="password" name="confirmpass" id="confirmpass" size="60" required="required"></li>
 								</fieldset>
+								<br>
 								<fieldset>
 									<legend>Dog</legend>
 									<li><label>Dog Name:</label></li>
-									<li><input type="text" name="dogname" id="dogname" required="required"></li>
+									<li><input type="text" name="dogname" id="dogname" size="60" required="required"></li>
 									<br>
 									<li><label>Dog Breed:</label></li>
-									<li><input type="text" name="dogbreed" id="dogbreed" required="required"></li>
-									<input type="submit" value="Add Dog">
+									<li><input type="text" name="dogbreed" id="dogbreed" size="60" required="required"></li>
+									<br>
+									<li><input type="submit" value="Add Dog"></li>
 								</fieldset>
+								<br>
+								<li id="registerbutton"><input type="submit" value="Register"></li>
 							</ul>
-							<input type="submit" value="Register">
 						</form>
 					</div>
 				</div>
