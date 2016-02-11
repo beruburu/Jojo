@@ -18,13 +18,20 @@ fieldset {
 	padding:15px;
 }
 #signinform {
-	border:3px solid #f07877;
 	width:250px;
 	padding: 15px;
+	text-align:right;
 }
 #registerform {
 	text-align:left;
 }
-#registerbutton {
+#submitbutton {
 	padding-left:20px;
+}
+a {
+    text-decoration: none;
+    color: #74A495;
+}
+a:hover {
+    color: #B0E5DC;
 }
