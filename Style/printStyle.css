@@ -17,16 +17,13 @@ body {
 }
 
 #signin {
-    background-color: #ffffff;
-    text-align: right;
-    padding: 10px 10px;
-    margin-bottom: 0;
+    display: none;
 }
 
 h1 {
     font-family: junction, sans-serif;
     background-color: #ffffff;
-    color: #f07877;
+    color: #000000;
     text-align: center;
     padding: 30px;
     margin-top: 0px;
