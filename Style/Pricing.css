@@ -15,8 +15,9 @@ th {
     border-bottom: 3px solid #f07877;
     border-right: 3px solid #f07877;
     font-family: junction, sans-serif;
-    font-weight: bold;
-    color: #74A495;
+    font-weight: bolder;
+    color: #B0E5DC;
+    font-size: 1.35em;
     text-align: center;
 }
 th:last-child {
@@ -25,9 +26,10 @@ th:last-child {
 td:last-child {
     border-right: 0px none #ffffff;
 }
-td {
+td:nth-child(2) {
     border-right: 3px solid #f07877;
 }
-tr:nth-child(even) {
-    background-color: #ffffff;
+td {
+    border-right: 3px solid #f07877;
+    padding-left: 5%; 
 }
