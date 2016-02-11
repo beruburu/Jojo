@@ -1,6 +1,6 @@
 #price {
     color: #f07877;
-    text-align: left;
+    text-align: center;
 }
 #basics {
     border-bottom: 3px solid #f07877;
@@ -8,28 +8,26 @@
 }
 table {
     padding-bottom: 10%;
+    border-collapse: collapse;
+    width: 100%;
 }
 th {
+    border-bottom: 3px solid #f07877;
+    border-right: 3px solid #f07877;
     font-family: junction, sans-serif;
     font-weight: bold;
     color: #74A495;
+    text-align: center;
+}
+th:last-child {
+    border-right: 0px none #ffffff;
+}
+td:last-child {
+    border-right: 0px none #ffffff;
+}
+td {
+    border-right: 3px solid #f07877;
 }
 tr:nth-child(even) {
-    background-color: #BEA488;
-}
-#rightcol {
-    width: 30%;
-    padding-left: 5%;
-}
-#leftcol {
-    width: 30%;
-    padding-left: 0;
-}
-#groom {
-    border-bottom: 3px solid #f07877;
-    padding-bottom: 15%;
-}
-#main {
-    width: 1200px;
-    margin: auto;
+    background-color: #ffffff;
 }
