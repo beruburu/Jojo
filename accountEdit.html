@@ -5,6 +5,7 @@
         <meta charset="utf-8" />
         <title>Jojo's Dog Grooming - Account</title>
         <link rel="stylesheet" href="style/base.css">
+		<link rel="stylesheet" href="style/signin.css">
     </head>
     
     <body>
@@ -25,7 +26,7 @@
 						    <ul>
                                 <li><a href="pricing.html">Pricing</a></li>
 					            <li><a href="booking.html">Booking</a></li>
-					            <li><a href="faqs.html">FAQs</a></li>
+					            <li><a href="FAQs.html">FAQs</a></li>
                             </ul>
 			            </div></li>
                     <li><a href="contactUs.html">Contact Us</a></li>
@@ -35,9 +36,9 @@
         
 		<div id="content">
             <div id="leftcol">
-				<img src="images/placeholder.jpg">
+				<p>Please make sure all required fields are filled before submitting changes to the account.</p>
+				<img src="images/placeholder.jpg" width="250" height="250">
 			</div>
-            
 			<div id="rightcol">
 				<h2>Account</h2>
 				<form name="accountEdit" method="post" id="accountEdit">
@@ -45,24 +46,29 @@
 						<fieldset>
 							<legend>Owner</legend>
 							<li><label>First Name:</label></li>
-							<li><input type="text" name="firstname" id="firstname" required="required"></li>
+							<li><input type="text" name="firstname" id="firstname" size="60" required="required"></li>
+							<br>
 							<li><label>Last Name:</label></li>
-							<li><input type="text" name="lastname" id="lastname" required="required"></li>
+							<li><input type="text" name="lastname" id="lastname" size="60" required="required"></li>
+							<br>
 							<li><label>Phone Number:</label></li>
-							<li><input type="text" name="phone" id="phone" required="required"></li>
+							<li><input type="text" name="phone" id="phone" size="60" required="required"></li>
+							<br>
 							<li><label>Email:</label></li>
-							<li><input type="text" name="email" id="email" required="required"></li>
+							<li><input type="text" name="email" id="email" size="60" required="required"></li>
 						</fieldset>
+						<br>
 						<fieldset>
 							<legend>Dog</legend>
 							<li><label>Dog Name: </label></li>
-							<li><input type="text" name="dogname" id="dogname" required="required"></li>
+							<li><input type="text" name="dogname" id="dogname" size="60" required="required"></li><br>
 							<li><label>Dog Breed: </label></li>
-							<li><input type="text" name="dogbreed" id="dogbreed" required="required"></li>
+							<li><input type="text" name="dogbreed" id="dogbreed" size="60" required="required"></li><br>
 							<input type="submit" value="Add Dog">
 						</fieldset>
+						<br>
+						<li id="submitbutton"><input type="submit" value="Save Changes"></li>
 					</ul>
-					<input type="submit" value="Save Changes">
 				</form>
 			</div>
         </div>

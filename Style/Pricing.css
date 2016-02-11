@@ -1,6 +1,6 @@
 #price {
     color: #f07877;
-    text-align: center;
+    text-align: left;
 }
 #basics {
     border-bottom: 3px solid #f07877;
@@ -16,11 +16,6 @@ th {
 }
 tr:nth-child(even) {
     background-color: #BEA488;
-}
-#middle {
-    float: left;
-    padding-right: 5%;
-    padding-left: 5%;
 }
 #rightcol {
     width: 30%;
