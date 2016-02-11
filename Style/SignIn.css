@@ -28,3 +28,10 @@ fieldset {
 #submitbutton {
 	padding-left:20px;
 }
+a {
+    text-decoration: none;
+    color: #74A495;
+}
+a:hover {
+    color: #B0E5DC;
+}
