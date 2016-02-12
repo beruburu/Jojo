@@ -24,7 +24,7 @@ h1 {
     font-family: junction, sans-serif;
     background-color: #ffffff;
     color: #000000;
-    text-align: center;
+    text-align: left;
     padding: 30px;
     margin-top: 0px;
     width: 100%;
@@ -33,6 +33,10 @@ h1 {
 header {
     width: fill-available;
     margin-top: 0px;
+}
+
+header img {
+    display: block;
 }
 
 nav {
