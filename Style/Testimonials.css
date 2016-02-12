@@ -3,8 +3,10 @@
 #gallery ul { width: 250px; 
 			  list-style-type: none; }
 
-#gallery li { display: inline-block; 
-			  padding: 10px; }
+#gallery li { display: inline; 
+			  padding: 10px;
+              list-style-type: none;
+}
 
 #gallery img { border-style: none; }
 
@@ -12,10 +14,3 @@
 			 color: #333; 
 			 font-style: italic; }
 
-#gallery span { display: none; } 
-   
-#gallery a:hover span { display: block; 
-						position: absolute;
-						top: 10px; 
-						left: 300px; 
-						text-align: center; }
