@@ -1,3 +1,27 @@
 ul li {
     list-style-type: none;
 }
+#gallery { 
+    position: relative;        
+}
+
+#gallery ul { 
+    width: 250px;            
+}
+
+#gallery li { 
+    display: inline; 
+	padding: 10px;
+    list-style-type: none;
+}
+
+#gallery img { 
+    border-style: none;
+}
+
+#gallery a { 
+    text-decoration: none; 
+	color: #333; 
+	font-style: italic;
+}
+
