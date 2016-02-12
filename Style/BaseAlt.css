@@ -20,22 +20,16 @@ h1 {
     width: 100%;
 }
 header {
+    width: 1600px;
     margin-top: 0px;
-    min-width: fill-available;
-}
-nav {
-    background-color: #bea488;
-    text-align: center;
-    float: left;
+    position: relative;
 }
 nav ul {
     list-style-type: none;
     margin-bottom: 0;
 }
-#nav li {
-    padding: 60px 30px;
-}
 nav ul li {
+    padding: 60px 30px;
     border-bottom: 3px solid #74A495;
 }
 nav ul li:nth-last-child(1) {
@@ -66,12 +60,16 @@ h2 {
     font-family: junction, sans-serif;
     color: #B0E5DC;
 }
+nav {
+    float:left;
+}
 #nav{
     list-style:none;
     font-weight:bold;
     margin-bottom:10px;
-    float:left;
-    width:100%;
+    width:200px;
+    background-color: #bea488;
+    text-align: center;
 }
 #nav a{
     display:block;
@@ -108,17 +106,18 @@ h2 {
     margin: 5% 1%;
     padding: 1% 5% 1% 5%;
     float: left; 
-    width: 25%;
+    width: 200px;
     border-left: 3px solid #74A495;
 }
 #rightcol {
     float: left;
-    width: 50%;
+    width: 450px;
     border-left: 3px solid #74A495;
     padding: 1% 5%;
     margin: 5% 1%;
 }
 footer {
+    width: 1600px;
     border-top: 3px solid #74A495;
     clear: left;
     text-align: center;
