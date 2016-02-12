@@ -5,7 +5,7 @@ body {
     padding: 0;
 }
 #signin {
-    background-color: #ffffff;
+    background-color: #bea488;
     text-align: right;
     padding: 10px 10px;
     margin-bottom: 0;
@@ -24,34 +24,32 @@ header {
     min-width: fill-available;
 }
 nav {
-    background-color: #ffffff;
+    background-color: #bea488;
     text-align: center;
-    width: 100%;
+    float: left;
 }
 nav ul {
     list-style-type: none;
     margin-bottom: 0;
 }
-nav ul li {
-    display:  inline-block;
-    border-right: 3px solid #f07877;
-}
 #nav li {
-    padding: 0px 30px;
+    padding: 60px 30px;
+}
+nav ul li {
+    border-bottom: 3px solid #74A495;
 }
 nav ul li:nth-last-child(1) {
-    border-right: 0px none #ffffff;
+    border-bottom: 0px none #ffffff;
 } 
 #signin a {
     text-decoration: none;
-    color: #f07877;
+    color: #B0E5DC;
 }
 #signin a:hover {
     color: #74A495;
     text-decoration: underline;
 }
 .dropdown {
-    position: relative;
     display: inline-block;
 }
 .dropdowncontent {
@@ -66,7 +64,7 @@ nav ul li:nth-last-child(1) {
 }
 h2 {
     font-family: junction, sans-serif;
-    color: #74A495;
+    color: #B0E5DC;
 }
 #nav{
     list-style:none;
@@ -79,19 +77,19 @@ h2 {
     display:block;
     padding:5px;
     color:#B0E5DC;
-    background:#ffffff;
+    background:#bea488;
     text-decoration:none;
 }
 #nav a:hover{
     color:#74A495;
-    text-decoration:underline;
+    text-decoration:none;
 }
 /*--- DROPDOWN ---*/
 #nav ul{
     list-style:none;
     position:absolute;
     left:-9999px; /* Hide off-screen when not needed (this is more accessible than display:none;) */
-    background-color: #ffffff;
+    background-color: #bea488;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     padding: 12px 16px;
 }
@@ -99,32 +97,33 @@ h2 {
     left:-63px;
 }
 #nav li:hover ul li a:hover{
-    background:#ffffff;
-    text-decoration: underline;
+    background:#bea488;
+    text-decoration: none;
 }
 #nav li ul li {
     border-right: 0px none #ffffff;
     padding: 0px 10px; 
 }
 #leftcol {
-    margin: 5% 0;
-    padding: 1% 5% 1% 0;
+    margin: 5% 1%;
+    padding: 1% 5% 1% 5%;
     float: left; 
-    width: 30%;
+    width: 25%;
+    border-left: 3px solid #74A495;
 }
 #rightcol {
     float: left;
     width: 50%;
-    border-left: 3px solid #f07877;
+    border-left: 3px solid #74A495;
     padding: 1% 5%;
     margin: 5% 1%;
 }
 footer {
-    border-top: 3px solid #f07877;
+    border-top: 3px solid #74A495;
     clear: left;
     text-align: center;
     font-size: 0.8em;
-    color: #74A495;
+    color: #B0E5DC;
 }
 #content {
     width: 1024px;
