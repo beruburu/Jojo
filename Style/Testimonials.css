@@ -6,11 +6,10 @@ ul li {
 }
 
 #gallery ul { 
-    width: 250px;            
+    width: 700px;            
 }
-
 #gallery li { 
-    display: inline; 
+    display: inline-block; 
 	padding: 10px;
     list-style-type: none;
 }
