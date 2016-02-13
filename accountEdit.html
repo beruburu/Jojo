@@ -38,59 +38,66 @@
 		<div id="content">
             <div id="leftcol">
 				<p>Please make sure all required fields are filled before submitting changes to the account.</p>
-				<img src="images/placeholder.jpg" width="250" height="250">
+				<img src="images/placeholder.jpg" width="250" height="250" alt="placeholder">
 			</div>
 			<div id="rightcol">
 				<h2>Account</h2>
-				<form name="accountEdit" method="post" id="accountEdit" action="http://webdevfoundations.net/scripts/formdemo.asp">
-					<fieldset>
+				<!--Form for editting account information-->
+					<form name="register" method="post" id="register" action="http://webdevfoundations.net/scripts/formdemo.asp">
+						<fieldset>
 						<legend>Owner</legend>
-						<label for="firstname">First Name:</label></li>
+						<label for="firstname">First Name:</label>
 						<br>
 						<input type="text" name="firstname" id="firstname" size="60" required="required">
 						<br>
 						<br>
-						<label for="lastname">Last Name:</label></li>
+						<label for="lastname">Last Name:</label>
 						<br>
 						<input type="text" name="lastname" id="lastname" size="60" required="required">
 						<br>
 						<br>
-						<label for="phone">Phone Number:</label></li>
+						<label for="phone">Phone Number:</label>
 						<br>
 						<input type="text" name="phone" id="phone" size="60" required="required">
 						<br>
 						<br>
-						<label for="email">Email:</label></li>
+						<label for="email">Email:</label>
 						<br>
 						<input type="text" name="email" id="email" size="60" required="required">
+						<br>
+						<br>
+						<label for="pass">Password:</label>
+						<br>
+						<input type="password" name="pass" id="pass" size="60" required="required">
+						<br>
+						<br>
+						<label for="confirmpass">Confirm Password:</label>
+						<br>
+						<input type="password" name="confirmpass" id="confirmpass" size="60" required="required">
 					</fieldset>
 					<br>
 					<fieldset>
 						<legend>Dog</legend>
-						<label for="dogname">Dog Name: </label>
+						<label for="dogname">Dog Name:</label>
 						<br>
 						<input type="text" name="dogname" id="dogname" size="60" required="required">
 						<br>
 						<br>
-						<label for="dogbreed">Dog Breed: </label>
+						<label for="dogbreed">Dog Breed:</label>
 						<br>
 						<input type="text" name="dogbreed" id="dogbreed" size="60" required="required">
 						<br>
 						<br>
-						<input type="submit" value="Add Dog">
+						<!--link adds another dog field for registration form-->
+						<a href="#">Add Dog</a>
 					</fieldset>
 					<br>
-					<a href="#">Add Dog</a>
+					<input type="submit" value="Save Changes">
 				</form>
 			</div>
         </div>
-		<div id="aside">
-		</div>
-		<div id="account">
-		</div>
 		<footer>
 		    <p>Facebook, Instagram, Twitter</p>
 		</footer>
-        </div>
     </body>
 </html>
