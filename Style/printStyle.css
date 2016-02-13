@@ -16,6 +16,7 @@ body {
     padding: 0;
 }
 
+/*Makes the sign in link invisible for print*/
 #signin {
     display: none;
 }
@@ -35,10 +36,12 @@ header {
     margin-top: 0px;
 }
 
+/*Makes logo visible for print*/
 header img {
     display: block;
 }
 
+/*Hides the navigation bar for print*/
 nav {
     display: none;
 }
@@ -78,6 +81,7 @@ header a {
     text-decoration: none;
 }
 
+/*Hides all the images for print*/
 img {
     display: none;
 }
