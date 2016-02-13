@@ -53,6 +53,13 @@ h2 {
 h3 {
     color: #f07877;
 }
+h3 a {
+    text-decoration: none;
+    color: #F07877;
+}
+h3 a:hover {
+    color: #74A495;
+}
 header {
     margin-top: 0px;
 }
@@ -141,6 +148,7 @@ nav ul li:nth-last-child(1) {
 #rightcol {
     float: left;
     width: 500px;
+    min-height: 400px;
     border-left: 3px solid #f07877;
     padding: 1% 5%;
     margin: 5% 1%;
@@ -162,29 +170,22 @@ li {
 table {
     padding-bottom: 10%;
     border-collapse: collapse;
-    width: 100%;
+    width: 150%;
 }
 th {
-    border-bottom: 3px solid #f07877;
-    border-right: 3px solid #f07877;
+    border-bottom: 0px none #ffffff;
+    border-right: 0px none #ffffff;
     font-family: junction, sans-serif;
     font-weight: bolder;
     color: #74A495;
     font-size: 1.35em;
     text-align: center;
-}
-th:last-child {
-    border-right: 0px none #ffffff;
-}
-td:last-child {
-    border-right: 0px none #ffffff;
-}
-td:nth-child(2) {
-    border-right: 3px solid #f07877;
+    padding: 0% 10%;
 }
 td {
-    border-right: 3px solid #f07877;
-    padding-left: 5%; 
+    text-align: center;
+    padding: 0% 10%;
+    border-right: 0px none #ffffff; 
 }
 #gallery { 
     position: relative;        
@@ -234,6 +235,9 @@ fieldset {
 }
 #submitbutton {
 	padding-left:20px;
+}
+#services {
+    padding-bottom: 30px;
 }
 footer {
     border-top: 3px solid #f07877;
