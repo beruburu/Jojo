@@ -170,11 +170,6 @@ li a {
 li {
     list-style-type: none;
 }
-/*The Pricing heading.*/
-#price {
-    color: #f07877;
-    text-align: center;
-}
 table {
     padding-bottom: 10%;
     border-collapse: collapse;
@@ -184,10 +179,8 @@ table {
 th {
     border-bottom: 0px none #ffffff;
     border-right: 0px none #ffffff;
-    font-family: junction, sans-serif;
-    font-weight: bolder;
-    color: #74A495;
-    font-size: 1.35em;
+    color: #f07877;
+    font-size: 1.25em;
     text-align: center;
     padding: 0% 10%;
 }
@@ -228,7 +221,7 @@ form {
 legend{
     display:block;
     padding:5px;
-    color:#B0E5DC;
+    color:#f07877;;
 	font-weight:bold;
 	font-size:1.35em;
     background:#ffffff;
