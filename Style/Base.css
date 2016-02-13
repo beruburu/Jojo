@@ -47,7 +47,6 @@ a:hover {
   Creates the background colour for the header banner.*/
 h1 {
     font-family: junction, sans-serif;
-    background-color: #B0E5DC;
     color: #f07877;
     text-align: center;
     padding: 30px;
@@ -74,7 +73,11 @@ h3 a:hover {
 }
 /*Removes the header margins.*/
 header {
-    margin-top: 0px;
+    background: url("../Images/headerBackground.png");
+    background-repeat: repeat-x;
+    background-position: 0px 50px;
+    max-height: 200px;
+    margin-top: 10px;
 }
 /*Removes the underline in header links.*/
 header a {
@@ -82,6 +85,7 @@ header a {
 }
 /*centers the nar bar. Creates the top and bottom bar.*/
 nav {
+    margin-top: 100px; 
     text-align: center;
     border-top: 3px solid #f07877;
     border-bottom: 3px solid #f07877;
