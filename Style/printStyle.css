@@ -31,7 +31,7 @@ h1 {
 }
 
 header {
-    width: fill-available;
+    width: 100%;
     margin-top: 0px;
 }
 
@@ -80,4 +80,10 @@ header a {
 
 img {
     display: none;
+}
+
+table {
+    padding-bottom: 10%;
+    border-collapse: collapse;
+    width: 100%;
 }
