@@ -1,3 +1,4 @@
+/*The customised font "junction".*/
 @font-face {
     font-family: 'junction';
     src: url('junctionFont/Junction-webfont.eot');
@@ -9,12 +10,14 @@
     font-style: normal;
 
 }
+/*Resets the background and margins.*/
 body {
     background-color: #ffffff;
     font-family: Helvetica, Calibri, sans-serif;
     margin: 0;
     padding: 0;
 }
+/*The links default colour.*/
 a {
     font-weight: bold;
     text-decoration: none;
@@ -23,20 +26,25 @@ a {
 a:hover {
     text-decoration: underline;
 }
+/*The sign in bar.*/
 #signin {
     background-color: #ffffff;
     text-align: right;
     padding: 10px 10px;
     margin-bottom: 0;
 }
+/*Sets the colour to pink.*/
 #signin a {
     text-decoration: none;
     color: #f07877;
 }
+/*The hover sign in changes colour.*/
 #signin a:hover {
     color: #74A495;
     text-decoration: underline;
 }
+/*Gives the h1 the custom font.
+  Creates the background colour for the header banner.*/
 h1 {
     font-family: junction, sans-serif;
     background-color: #B0E5DC;
@@ -46,105 +54,106 @@ h1 {
     margin-top: 0px;
     width: 100%;
 }
+/*Sub-heading with customized font.*/
 h2 {
     font-family: junction, sans-serif;
     color: #74A495;
 }
+/*Sub-sub-heading colour.*/
 h3 {
     color: #f07877;
 }
+/*Linked h3 colour.*/
 h3 a {
     text-decoration: none;
     color: #F07877;
 }
+/*h3 a new colour for hovers.*/
 h3 a:hover {
     color: #74A495;
 }
+/*Removes the header margins.*/
 header {
     margin-top: 0px;
 }
+/*Removes the underline in header links.*/
 header a {
     text-decoration: none;
 }
+/*centers the nar bar. Creates the top and bottom bar.*/
 nav {
     text-align: center;
+    border-top: 3px solid #f07877;
+    border-bottom: 3px solid #f07877;
 }
+/*Removes bullet points from list.*/
 nav ul {
     list-style-type: none;
     margin-bottom: 0;
 }
+/*Creates a vertical nav bar.*/
 nav ul li {
     display:  inline-block;
-    border-right: 3px solid #f07877;
     padding: 0px 30px;
 }
-nav ul li:nth-last-child(1) {
-    border-right: 0px none #ffffff;
-}
+/*Formats the nav text.*/
 #nav{
     background-color: #ffffff;
-
     list-style:none;
     font-weight:bolder;
     margin-bottom:10px;
-    float:left;
     width:100%;
 }
+/*Pads the nav bar.*/
 #nav a{
     display:block;
     padding:5px;
-    color:#74A495;
-    background:#ffffff;
-    text-decoration:none;
 }
-#nav a:hover{
-    color:#74A495;
-    text-decoration:underline;
-}
-/*--- DROPDOWN ---*/
+/*Dropdown menu.*/
 #nav ul{
     list-style:none;
     position:absolute;
-    left:-9999px; /* Hide off-screen when not needed (this is more accessible than display:none;) */
+    /* Hide off-screen*/
+    left:-9999px;
     background-color: #ffffff;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     padding: 12px 16px;
 }
+/*Shows the dropdown menu when hovered.*/
 #nav li:hover ul{ 
     left:-63px;
 }
-#nav li:hover ul li a:hover{
-    background:#ffffff;
-    text-decoration: underline;
-}
+/*Pads the dropdown menu to centre text.*/
 #nav li ul li {
-    border-right: 0px none #ffffff;
     padding: 0px 10px; 
 }
+/*Formats the dropdown menu as a block.*/
 .dropdown {
     position: relative;
     display: inline-block;
 }
+/*Keeps the menu in line.*/
 .dropdowncontent {
     display: none;
     position: absolute;
 }
-.dropdowncontent ul li {
-    padding-right: 10px;
-}
+/*Creates the block for the dropdown menu.*/
 .dropdown:hover .dropdowncontent{
     display: inline-block;
 }
+/*The section for content.*/
 #content {
     width: 1024px;
     margin: auto;
 }
+/*The left column.*/
 #leftcol {
     margin: 5% 0;
     padding: 1% 5% 1% 0;
     float: left; 
     width: 300px;
 }
+/*The right column.*/
 #rightcol {
     float: left;
     width: 500px;
@@ -153,25 +162,25 @@ nav ul li:nth-last-child(1) {
     padding: 1% 5%;
     margin: 5% 1%;
 }
+/*Removes the underline.*/
 li a {
     text-decoration: none;
 }
+/*Removes bullet points.*/
 li {
     list-style-type: none;
 }
+/*The Pricing heading.*/
 #price {
     color: #f07877;
     text-align: center;
-}
-#basics {
-    border-bottom: 3px solid #f07877;
-    padding-bottom: 20px;
 }
 table {
     padding-bottom: 10%;
     border-collapse: collapse;
     width: 150%;
 }
+/*The table headings.*/
 th {
     border-bottom: 0px none #ffffff;
     border-right: 0px none #ffffff;
@@ -182,36 +191,40 @@ th {
     text-align: center;
     padding: 0% 10%;
 }
+/*The table cells*/
 td {
     text-align: center;
-    padding: 0% 10%;
-    border-right: 0px none #ffffff; 
+    padding: 0% 10%; 
 }
+/*Positions the photos.*/
 #gallery { 
     position: relative;        
 }
-
+/*Width of the photo list*/
 #gallery ul { 
     width: 700px;            
 }
+/*Lines the photos next to each other.*/
 #gallery li { 
     display: inline-block; 
 	padding: 10px;
     list-style-type: none;
 }
-
+/*Removes the image borders.*/
 #gallery img { 
     border-style: none;
 }
-
+/*The photo links.*/
 #gallery a { 
     text-decoration: none; 
 	color: #333; 
 	font-style: italic;
 }
+/*Pads the form.*/
 form {
     padding-bottom: 10%;
 }
+/*The forms legend.*/
 legend{
     display:block;
     padding:5px;
@@ -221,24 +234,26 @@ legend{
     background:#ffffff;
     text-decoration:none;
 }
+/*The fieldset border.*/
 fieldset {
 	border:3px solid #f07877;
 	padding:15px;
 }
+/*The forms width and text alignment.*/
 #signinform {
 	width:250px;
 	padding: 15px;
 	text-align:right;
 }
+/*The register form.*/
 #registerform {
 	text-align:left;
 }
+/*The padding on the submit button.*/
 #submitbutton {
 	padding-left:20px;
 }
-#services {
-    padding-bottom: 30px;
-}
+/*The footer bar.*/
 footer {
     border-top: 3px solid #f07877;
     clear: left;
