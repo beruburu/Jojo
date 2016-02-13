@@ -1,29 +1,12 @@
-#table tr:nth-child(odd) {
-    color: white;
-    background-color: #f07877;
-    font-size: 1.35em;
-    font-family: Helvetica, Calibri, sans-serif;
-}
 
-#table {
+
+#services {
     padding-bottom: 30px;
-}
-
-#td1 {
-    padding-bottom: 20px;
-}
-
-#td2 {
-    padding-bottom: 20px;
-}
-
-#td3 {
-    padding-bottom: 20px;
 }
 
 a {
     text-decoration: none;
-    color: white;
+    color: #F07877;
 }
 
 a:hover {
