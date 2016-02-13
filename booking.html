@@ -5,13 +5,13 @@
         <meta charset="utf-8" />
         <title>Jojo's Dog Grooming - Booking</title>
         <link rel="stylesheet" href="style/base.css" media="screen">
-        <link rel="stylesheet" href="style/printStyle.css" media="print">
+        <link rel="stylesheet" href="style/printstyle.css" media="print">
     </head>
     
     <body>
         
         <div id="signin">
-            <a href="signIn.html">sign in/register</a>
+            <a href="signin.html">sign in/register</a>
         </div> 
         <header>
 		    <a href="index.html"><h1><img src="Images/logo.png"
@@ -20,14 +20,14 @@
         <nav>
             <div class="dropdown">
                 <ul id="nav">
-                    <li><a href="aboutUs.html">About Us</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
                     <li><a href="testimonials.html">Testimonials</a></li>
                     <li><a href="services.html" id="drop">Services</a>
 					    <div class="dropdowncontent">
 						    <ul>
                                 <li><a href="pricing.html">Pricing</a></li>
 					            <li><a href="booking.html">Booking</a></li>
-					            <li><a href="FAQs.html">FAQs</a></li>
+					            <li><a href="faqs.html">FAQs</a></li>
                             </ul>
 			            </div></li>
                     <li><a href="contactus.html">Contact Us</a></li>
@@ -37,10 +37,14 @@
         
         <div id="content">
             <div id="leftcol">
-                <h2>Book your appointment today!</h2>
+                <p>Book your appointment today!</p>
                 <img src="images/placeholder.jpg" alt="add image here" width="250" height="250">
             </div>
             <div id="rightcol">
+                <!-- 
+                The form contains the calendar and the time, where the user can input
+                their wanted appointment and submit it into the database.
+                -->
                 <form>
                 <h2>Booking</h2>
                     <label for="Date">Choose a Date</label>
@@ -55,7 +59,13 @@
         </div>
 		
 		<footer>
-		    <p>Facebook, Instagram, Twitter</p>
+		    <p>Follow us:</p>
+            <p><a href="#"><img src="Images/facebook.png"
+                 width="50" height="50" alt="Facebook"></a>
+                <a href="#"><img src="Images/instagram.png"
+                 width="50" height="50" alt="instagram"></a>
+                <a href="#"><img src="Images/twitter.png"
+                 width="50" height="50" alt="Twitter"></a></p>
 		</footer>
     </body>
 </html>

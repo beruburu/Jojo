@@ -5,11 +5,11 @@
         <meta charset="utf-8" />
         <title>Jojo's Dog Grooming - FAQs</title>
         <link rel="stylesheet" href="style/base.css" media="screen">
-        <link rel="stylesheet" href="style/printStyle.css" media="print">
+        <link rel="stylesheet" href="style/printstyle.css" media="print">
     </head>
     <body>
         <div id="signin">
-            <a href="signIn.html">sign in/register</a>
+            <a href="signin.html">sign in/register</a>
         </div> 
         <header>
 			<a href="index.html"><h1><img src="Images/logo.png"
@@ -18,14 +18,14 @@
         <nav>
             <div class="dropdown">
                 <ul id="nav">
-                    <li><a href="aboutUs.html">About Us</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
                     <li><a href="testimonials.html">Testimonials</a></li>
                     <li><a href="services.html" id="drop">Services</a>
 					    <div class="dropdowncontent">
 						    <ul>
                                 <li><a href="pricing.html">Pricing</a></li>
 					            <li><a href="booking.html">Booking</a></li>
-					            <li><a href="FAQs.html">FAQs</a></li>
+					            <li><a href="faqs.html">FAQs</a></li>
                             </ul>
 			            </div></li>
                     <li><a href="contactus.html">Contact Us</a></li>
@@ -35,38 +35,48 @@
         
         <div id="content">
             <div id="leftcol">
-				<h2>Find the answers to your questions here!</h2>
+				<p>Find the answers to your questions here!<p>
 				<img src="images/placeholder.jpg" alt="add image here" width="250" height="250">
 			</div>
             
             <div id="rightcol">
+                <!--
+                The questions below are content to linked to their answers.
+                -->
                 <h2>FAQs</h2>
-                    <div id="Questions">
-                        <h2>Questions</h2>
+                        <h3>Questions</h3>
                         <ul>
-
-                                <li><a href="#Answer1"><h3>Question 1</h3></a></li>
-                                <li><a href="#Answer2"><h3>Question 2</h3></a></li>
-                                <li><a href="#Answer3"><h3>Question 3</h3></a></li>
-                                <li><a href="#Answer4"><h3>Question 4</h3></a></li>
+                                <!--
+                                Questions are given ID references to its respected
+                                answers.
+                                -->
+                                <li><a href="#Answer1">Question 1</a></li>
+                                <li><a href="#Answer2">Question 2</a></li>
+                                <li><a href="#Answer3">Question 3</a></li>
+                                <li><a href="#Answer4">Question 4</a></li>
 
                         </ul>
-                    </div>
-                    <div id="Answers">
-                        <h2>Answers</h2>
+                        <h3>Answers</h3>
                             <ul>
-
-                                <li><a id="Answer1"><h3>Answer 1</h3></a></li>
-                                <li><a id="Answer2"><h3>Answer 2</h3></a></li>
-                                <li><a id="Answer3"><h3>Answer 3</h3></a></li>
-                                <li><a id="Answer4"><h3>Answer 4</h3></a></li>
+                                <!--
+                                This is where the questions are linked to.
+                                -->
+                                <li>Answer 1</li>
+                                <li>Answer 2</li>
+                                <li>Answer 3</li>
+                                <li>Answer 4</li>
                                 
                             </ul>
-                    </div>
             </div>
         </div>
         <footer>
-		    <p>Facebook, Instagram, Twitter</p>
+		    <p>Follow us:</p>
+            <p><a href="#"><img src="Images/facebook.png"
+                 width="50" height="50" alt="Facebook"></a>
+                <a href="#"><img src="Images/instagram.png"
+                 width="50" height="50" alt="instagram"></a>
+                <a href="#"><img src="Images/twitter.png"
+                 width="50" height="50" alt="Twitter"></a></p>
 		</footer>
     </body>
 </html>
