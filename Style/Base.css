@@ -53,6 +53,13 @@ h2 {
 h3 {
     color: #f07877;
 }
+h3 a {
+    text-decoration: none;
+    color: #F07877;
+}
+h3 a:hover {
+    color: #74A495;
+}
 header {
     margin-top: 0px;
 }
@@ -228,6 +235,9 @@ fieldset {
 }
 #submitbutton {
 	padding-left:20px;
+}
+#services {
+    padding-bottom: 30px;
 }
 footer {
     border-top: 3px solid #f07877;
