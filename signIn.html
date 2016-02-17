@@ -4,8 +4,32 @@
     <head>
         <meta charset="utf-8" />
         <title>Jojo's Dog Grooming - Sign In/Register</title>
-        <link rel="stylesheet" href="Style/base.css" media="screen">
-        <link rel="stylesheet" href="Style/printstyle.css" media="print">
+        <link rel="stylesheet" href="style/base.css" media="screen">
+        <link rel="stylesheet" href="style/printstyle.css" media="print">
+        <script>
+            function validateSignIn() {
+                validateEmail();
+                validatePassword();
+            }
+            function validateEmail() {
+                var x = document.forms["signinform"]["signinemail"].value;
+                if (x == null || x == "") {
+                    document.getElementById("emailmsg").style.display=""
+                    return false;
+                }
+            }
+            function validatePassword() {
+                var y = document.forms["signinform"]["signinemail"].value;
+                if (y == null || x == "") {
+                    document.getElementById("passmsg").style.display=""
+                    return false;
+                }
+            }
+            function register() {
+                
+            }
+
+        </script>
     </head>
     
     <body>
@@ -39,15 +63,17 @@
             <div id="leftcol">
 				<!--Sign in form begins here-->
 				<h2>Sign In</h2>
-					<form name="signinform" method="post" id="signinform" action="http://webdevfoundations.net/scripts/formdemo.asp">
-					<label for="email">Email:</label>
+					<form name="signinform" method="post" id="signinform" action="http://webdevfoundations.net/scripts/formdemo.asp" onsubmit="return validateSignIn()">
+					<div id="emailmsg" style="color:Red;display:none">Please enter an email address</div>
+                    <label for="email">Email:</label>
 					<br>
-					<input type="text" name="signinemail" id="signinemail" size="30" required="required">
+					<input type="text" name="signinemail" id="signinemail" size="30" required="required" onblur="validateEmail()">
 					<br>
 					<br>
+					<div id="passmsg" style="color:Red;display:none">Please enter a password</div>
 					<label for="password">Password:</label>
 					<br>
-					<input type="password" name="password" id="password" size="30" required="required">
+					<input type="password" name="password" id="password" size="30" required="required" onblur="validatePassword()"> 
 					<br>
 					<br>
 					<input type="submit" value="Sign In">
@@ -57,34 +83,40 @@
 			<div id="rightcol">
 				<!--Regstration form begins here-->
 				<h2>Register</h2>
-					<form name="register" method="post" id="register" action="http://webdevfoundations.net/scripts/formdemo.asp">
+					<form name="register" method="post" id="register" action="http://webdevfoundations.net/scripts/formdemo.asp" onsubmit="return register()">
 						<fieldset>
 						<legend>Owner</legend>
+					    <div id="firstmsg" style="color:Red;display:none">Please enter your first name</div>
 						<label for="firstname">First Name:</label>
 						<br>
 						<input type="text" name="firstname" id="firstname" size="60" required="required">
 						<br>
 						<br>
+					    <div id="lastmsg" style="color:Red;display:none">Please enter your last name</div>
 						<label for="lastname">Last Name:</label>
 						<br>
 						<input type="text" name="lastname" id="lastname" size="60" required="required">
 						<br>
 						<br>
+					    <div id="phonemsg" style="color:Red;display:none">Please enter a phone number</div>
 						<label for="phone">Phone Number:</label>
 						<br>
 						<input type="text" name="phone" id="phone" size="60" required="required">
 						<br>
 						<br>
+					    <div id="emailmsg" style="color:Red;display:none">Please enter an email</div>
 						<label for="email">Email:</label>
 						<br>
-						<input type="text" name="email" id="email" size="60" required="required">
+						<input type="text" name="email" id="email" size="60" required="required" onblur="validateEmail()">
 						<br>
 						<br>
+					    <div id="passmsg" style="color:Red;display:none">Please enter a password</div>
 						<label for="pass">Password:</label>
 						<br>
-						<input type="password" name="pass" id="pass" size="60" required="required">
+						<input type="password" name="pass" id="pass" size="60" required="required" onblur="validatePassword()">
 						<br>
 						<br>
+					    <div id="passconmsg" style="color:Red;display:none">Please confirm your password</div>
 						<label for="confirmpass">Confirm Password:</label>
 						<br>
 						<input type="password" name="confirmpass" id="confirmpass" size="60" required="required">
@@ -92,11 +124,13 @@
 					<br>
 					<fieldset>
 						<legend>Dog</legend>
+					    <div id="dogmsg" style="color:Red;display:none">Please enter your dog's name</div>
 						<label for="dogname">Dog Name:</label>
 						<br>
 						<input type="text" name="dogname" id="dogname" size="60" required="required">
 						<br>
 						<br>
+					    <div id="breedmsg" style="color:Red;display:none">Please enter your dog's breed</div>
 						<label for="dogbreed">Dog Breed:</label>
 						<br>
 						<input type="text" name="dogbreed" id="dogbreed" size="60" required="required">
