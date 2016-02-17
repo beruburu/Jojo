@@ -1,6 +1,8 @@
 # Jojo
 COMP1536 - Webpage Project
 
+HTML:
+
 Meghan
 -Account Pages
 -Edit Account
@@ -21,3 +23,20 @@ Lacelei
 Ariana
 -Testimonials
 -Services
+
+JavaScript:
+
+Meghan
+-Gallery
+
+Haley
+-Sign In/Account Edit
+
+Teresa
+-Contact Us
+
+Lacelei
+-Booking
+
+Ariana
+-Booking
