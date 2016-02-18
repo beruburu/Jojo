@@ -43,49 +43,57 @@
 			<div id="rightcol">
 				<h2>Account</h2>
 				<!--Form for editting account information-->
-					<form name="register" method="post" id="register" action="http://webdevfoundations.net/scripts/formdemo.asp">
+					<form name="register" method="post" id="register" action="http://webdevfoundations.net/scripts/formdemo.asp" onsubmit="return register()">
 						<fieldset>
 						<legend>Owner</legend>
+					    <div id="firstmsg" style="color:Red;display:none">Please enter your first name</div>
 						<label for="firstname">First Name:</label>
 						<br>
-						<input type="text" name="firstname" id="firstname" size="60" required="required">
+						<input type="text" name="firstname" id="firstname" size="60" required="required" onblur="validateFirstName()" onfocus="focusFirstName()">
 						<br>
 						<br>
+					    <div id="lastmsg" style="color:Red;display:none">Please enter your last name</div>
 						<label for="lastname">Last Name:</label>
 						<br>
-						<input type="text" name="lastname" id="lastname" size="60" required="required">
+						<input type="text" name="lastname" id="lastname" size="60" required="required" onblur="validateLastName()" onfocus="focusLastName()">
 						<br>
 						<br>
+					    <div id="phonemsg" style="color:Red;display:none">Please enter a phone number</div>
 						<label for="phone">Phone Number:</label>
 						<br>
-						<input type="text" name="phone" id="phone" size="60" required="required">
+						<input type="text" name="phone" id="phone" size="60" required="required" onblur="validatePhone()" onfocus="focusPhone()">
 						<br>
 						<br>
-						<label for="email">Email:</label>
+					    <div id="emailregmsg" style="color:Red;display:none">Please enter an email address</div>
+                        <label for="email">Email:</label>
+					    <br>
+					    <input type="text" name="signinemail" id="signinemail" size="30" required="required" onblur="validateRegEmail()" onfocus="focusRegEmail()">
 						<br>
-						<input type="text" name="email" id="email" size="60" required="required">
 						<br>
-						<br>
+					    <div id="passregmsg" style="color:Red;display:none">Please enter a password</div>
 						<label for="pass">Password:</label>
 						<br>
-						<input type="password" name="pass" id="pass" size="60" required="required">
+						<input type="password" name="pass" id="pass" size="60" required="required" onblur="validateRegPassword()" onfocus="focusRegPassword()">
 						<br>
 						<br>
+					    <div id="passconmsg" style="color:Red;display:none">Please confirm your password</div>
 						<label for="confirmpass">Confirm Password:</label>
 						<br>
-						<input type="password" name="confirmpass" id="confirmpass" size="60" required="required">
+						<input type="password" name="confirmpass" id="confirmpass" size="60" required="required" onblur="validateConPassword()" onfocus="focusConPassword()">
 					</fieldset>
 					<br>
 					<fieldset>
 						<legend>Dog</legend>
+					    <div id="dogmsg" style="color:Red;display:none">Please enter your dog's name</div>
 						<label for="dogname">Dog Name:</label>
 						<br>
-						<input type="text" name="dogname" id="dogname" size="60" required="required">
+						<input type="text" name="dogname" id="dogname" size="60" required="required" onblur="validateDog()" onfocus="focusDog()">
 						<br>
 						<br>
+					    <div id="breedmsg" style="color:Red;display:none">Please enter your dog's breed</div>
 						<label for="dogbreed">Dog Breed:</label>
 						<br>
-						<input type="text" name="dogbreed" id="dogbreed" size="60" required="required">
+						<input type="text" name="dogbreed" id="dogbreed" size="60" required="required" onblur="validateBreed()" onfocus="focusBreed()">
 						<br>
 						<br>
 						<!--link adds another dog field for registration form-->
@@ -105,5 +113,6 @@
                 <a href="#"><img src="Images/twitter.png"
                  width="50" height="50" alt="Twitter"></a></p>
 		</footer>
+        <script src="signIn.js"></script>
     </body>
 </html>
