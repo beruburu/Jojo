@@ -40,7 +40,7 @@
 				<!--Sign in form begins here-->
 				<h2>Sign In</h2>
 					<form name="signinform" method="post" id="signinform" action="http://webdevfoundations.net/scripts/formdemo.asp" onsubmit="return validateSignIn()">
-					<div id="emailmsg" style="color:Red;display:none">Please enter an email address</div>
+					<div id="emailmsg" style="color:Red;display:none">Please enter a valid email address</div>
                     <label for="email">Email:</label>
 					<br>
 					<input type="text" name="signinemail" id="signinemail" size="30" required="required" onblur="validateEmail()" onfocus="focusEmail()">
@@ -80,7 +80,7 @@
 						<input type="text" name="phone" id="phone" size="60" required="required" onblur="validatePhone()" onfocus="focusPhone()">
 						<br>
 						<br>
-					    <div id="emailregmsg" style="color:Red;display:none">Please enter an email address</div>
+					    <div id="emailregmsg" style="color:Red;display:none">Please enter a valid email address</div>
                         <label for="email">Email:</label>
 					    <br>
 					    <input type="text" name="signinemail" id="signinemail" size="30" required="required" onblur="validateRegEmail()" onfocus="focusRegEmail()">
@@ -92,7 +92,7 @@
 						<input type="password" name="pass" id="pass" size="60" required="required" onblur="validateRegPassword()" onfocus="focusRegPassword()">
 						<br>
 						<br>
-					    <div id="passconmsg" style="color:Red;display:none">Please confirm your password</div>
+					    <div id="passconmsg" style="color:Red;display:none">Password does not match</div>
 						<label for="confirmpass">Confirm Password:</label>
 						<br>
 						<input type="password" name="confirmpass" id="confirmpass" size="60" required="required" onblur="validateConPassword()" onfocus="focusConPassword()">

@@ -8,6 +8,13 @@ function validateEmail() {
         document.getElementById("emailmsg").style.display = ""
         return false;
     }
+    else if (x.indexOf('@') === -1) {
+        document.getElementById("emailmsg").style.display = ""
+    }
+    else {
+        document.getElementById("emailmsg").style.display = "none"
+        return true;
+    }
 }
 function focusEmail() {
     var x = document.forms["signinform"]["signinemail"].value;
@@ -20,6 +27,10 @@ function validatePassword() {
     if (x == null || x == "") {
         document.getElementById("passmsg").style.display = ""
         return false;
+    }
+    else {
+        document.getElementById("passmsg").style.display = "none"
+        return true;
     }
 }
 function focusPassword() {
@@ -44,6 +55,10 @@ function validateFirstName() {
         document.getElementById("firstmsg").style.display = ""
         return false;
     }
+    else {
+        document.getElementById("firstmsg").style.display = "none"
+        return true;
+    }
 }
 function focusFirstName() {
     var x = document.forms["register"]["firstname"].value;
@@ -56,6 +71,10 @@ function validateLastName() {
     if (x == null || x == "") {
         document.getElementById("lastmsg").style.display = ""
         return false;
+    }
+    else {
+        document.getElementById("lastmsg").style.display = "none"
+        return true;
     }
 }
 function focusLastName() {
@@ -70,6 +89,10 @@ function validatePhone() {
         document.getElementById("phonemsg").style.display = ""
         return false;
     }
+    else {
+        document.getElementById("phonemsg").style.display = "none"
+        return true;
+    }
 }
 function focusPhone() {
     var x = document.forms["register"]["phone"].value;
@@ -82,6 +105,13 @@ function validateRegEmail() {
     if (x == null || x == "") {
         document.getElementById("emailregmsg").style.display = ""
         return false;
+    }
+    else if (x.indexOf('@') === -1) {
+        document.getElementById("emailregmsg").style.display = ""
+    }
+    else {
+        document.getElementById("emailregmsg").style.display = "none"
+        return true;
     }
 }
 function focusRegEmail() {
@@ -96,6 +126,10 @@ function validateRegPassword() {
         document.getElementById("passregmsg").style.display = ""
         return false;
     }
+    else {
+        document.getElementById("passregmsg").style.display = "none"
+        return true;
+    }
 }
 function focusRegPassword() {
     var x = document.forms["register"]["pass"].value;
@@ -105,9 +139,17 @@ function focusRegPassword() {
 }
 function validateConPassword() {
     var x = document.forms["register"]["confirmpass"].value;
+    var y = document.forms["register"]["pass"].value;
     if (x == null || x == "") {
         document.getElementById("passconmsg").style.display = ""
         return false;
+    }
+    else if (x!= y) {
+        document.getElementById("passconmsg").style.display = ""
+    }
+    else {
+        document.getElementById("passconmsg").style.display = "none"
+        return true;
     }
 }
 function focusConPassword() {
@@ -122,6 +164,10 @@ function validateDog() {
         document.getElementById("dogmsg").style.display = ""
         return false;
     }
+    else {
+        document.getElementById("dogmsg").style.display = "none"
+        return true;
+    }
 }
 function focusDog() {
     var x = document.forms["register"]["dogname"].value;
@@ -134,6 +180,10 @@ function validateBreed() {
     if (x == null || x == "") {
         document.getElementById("breedmsg").style.display = ""
         return false;
+    }
+    else {
+        document.getElementById("breedmsg").style.display = "none"
+        return true;
     }
 }
 function focusBreed() {
