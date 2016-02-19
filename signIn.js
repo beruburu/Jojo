@@ -89,7 +89,7 @@ function validatePhone() {
         document.getElementById("phonemsg").style.display = ""
         return false;
     }
-    else if (x.length <= 9) {
+    else if (x.length() <= 9) {
         document.getElementById("phonemsg").style.display = ""
         return false;
     }
@@ -100,7 +100,7 @@ function validatePhone() {
 }
 function focusPhone() {
     var x = document.forms["register"]["phone"].value;
-    if (x.length <= 9) {
+    if (x.length() <= 9) {
         document.getElementById("phonemsg").style.display = ""
     }
     else {
