@@ -127,12 +127,12 @@ function focusPhone() {
     }
 }
 function validateRegEmail() {
-    var x = document.getElementById("signinemail").value;
-    if (x == null || x == "") {
+    var x = document.getElementById("registeremail").value;
+    if (x === null || x === "") {
         document.getElementById("emailregmsg").style.display = "";
         return false;
     }
-    else if (x.indexOf('@') == -1) {
+    else if (x.indexOf('@') === -1) {
     document.getElementById("emailregmsg").style.display = "";
         return false;
     }
