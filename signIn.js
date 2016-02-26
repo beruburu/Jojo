@@ -84,12 +84,13 @@ function focusLastName() {
     }
 }
 function validatePhone() {
+    var y = /\d{10}/;
     var x = document.forms["register"]["phone"].value;
     if (x == null || x == "") {
         document.getElementById("phonemsg").style.display = ""
         return false;
     }
-    else if (x.length() <= 9) {
+    else if (x.length() != 10 && x != y) {
         document.getElementById("phonemsg").style.display = ""
         return false;
     }
@@ -99,8 +100,9 @@ function validatePhone() {
     }
 }
 function focusPhone() {
+    var y = /\d{10}/;
     var x = document.forms["register"]["phone"].value;
-    if (x.length() <= 9) {
+    if (x.length() != 10 && x != y) {
         document.getElementById("phonemsg").style.display = ""
     }
     else {
