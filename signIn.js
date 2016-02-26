@@ -53,23 +53,20 @@ function focusPassword() {
         document.getElementById("passmsg").style.display = "none";
     }
 }
-function register() {
-    if (validateFirstName() && validateLastName() && validatePhone()
-        && validateRegEmail() && validateRegPassword() && validateConPassword()
-        && validateDog() && validateBreed() === true) {
-        var send = true;
-    }
-    else {
-        send = false;
-    }
-    if (send == false) {
-        if (event.preventDefault) {
+function validateRegister() {
+    var valid = true;
+        valid = valid && validateFirstName();
+        valid = valid && validateLastName();
+        valid = valid && validatePhone();
+        valid = valid && validateRegEmail();
+        valid = valid && validateRegPassword();
+        valid = valid && validateConPassword();
+        valid = valid && validateDog();
+        valid = valid && validateBreed();
+    if (valid === false) {
             event.preventDefault();
-        } else {
-            event.returnValue = false;
-        }
     }
-        return send;
+        return valid;
 }
 function validateFirstName() {
     var x = document.getElementById("firstname").value;
@@ -131,11 +128,11 @@ function focusPhone() {
 }
 function validateRegEmail() {
     var x = document.getElementById("signinemail").value;
-    if (x === null || x === "") {
+    if (x == null || x == "") {
         document.getElementById("emailregmsg").style.display = "";
         return false;
     }
-    else if (x.indexOf('@') === -1) {
+    else if (x.indexOf('@') == -1) {
     document.getElementById("emailregmsg").style.display = "";
         return false;
     }
