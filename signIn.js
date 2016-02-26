@@ -1,11 +1,19 @@
 function validateSignIn() {
     if(validateEmail()
     && validatePassword() === true) {
-        return true;
+        var send = true;
     }
     else {
-        return false;
+        send = false;
     }
+    if (send == false) {
+        if (event.preventDefault) {
+            event.preventDefault();
+        } else {
+            event.returnValue = false;
+        }
+    }
+    return send;
 }
 function validateEmail() {
     var x = document.getElementById("signinemail").value;
@@ -49,11 +57,19 @@ function register() {
     if (validateFirstName() && validateLastName() && validatePhone()
         && validateRegEmail() && validateRegPassword() && validateConPassword()
         && validateDog() && validateBreed() === true) {
-        return true;
+        var send = true;
+    }
+    else {
+        send = false;
+    }
+    if (send == false) {
+        if (event.preventDefault) {
+            event.preventDefault();
+        } else {
+            event.returnValue = false;
         }
-        else {
-            return false;
-        }
+    }
+        return send;
 }
 function validateFirstName() {
     var x = document.getElementById("firstname").value;
