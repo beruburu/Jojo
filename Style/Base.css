@@ -252,10 +252,12 @@ fieldset {
 }
 /*The footer bar.*/
 footer {
+    background-color: #B0E5DC;
     border-top: 3px solid #f07877;
+    padding: 10px;
     clear: left;
     text-align: center;
     font-size: 0.8em;
-    color: #74A495;
+    color: #f07877;
     width: 100%;
 }
