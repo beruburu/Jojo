@@ -225,7 +225,7 @@ form {
 legend{
     display:block;
     padding:5px;
-    color:#f07877;;
+    color:#f07877;
 	font-weight:bold;
 	font-size:1.35em;
     background:#ffffff;
@@ -252,10 +252,21 @@ fieldset {
 }
 /*The footer bar.*/
 footer {
+    background-color: #B0E5DC;
     border-top: 3px solid #f07877;
+    padding: 10px;
     clear: left;
     text-align: center;
     font-size: 0.8em;
-    color: #74A495;
+    color: #f07877;
     width: 100%;
+}
+
+/*The navigation at the footer.*/
+#footernav li {
+    display: inline-block;
+    padding-right: 2em;
+}
+#footernav li a {
+        color: #f07877;
 }

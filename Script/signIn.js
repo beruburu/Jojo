@@ -142,7 +142,7 @@ function validateRegEmail() {
     }
 }
 function focusRegEmail() {
-    var x = document.getElementById("signinemail").value;
+    var x = document.getElementById("registeremail").value;
     if (x === null || x === "") {
         document.getElementById("emailregmsg").style.display = "none";
     }
