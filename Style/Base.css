@@ -267,3 +267,6 @@ footer {
     display: inline-block;
     padding-right: 2em;
 }
+#footernav li a {
+        color: #f07877;
+}
