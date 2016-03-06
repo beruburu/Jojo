@@ -71,6 +71,19 @@ h3 a {
 h3 a:hover {
     color: #74A495;
 }
+/*Answers for FAQs page*/
+dt {
+    color: #74A495;
+    font-size: 1.15em;
+    font-weight: bold;
+    padding-bottom: 0.5em;
+}
+dd {
+    padding-bottom: 1.15em;
+}
+#dogsize th{
+    color: #74A495;
+}
 
 /*Removes the header margins.*/
 header {
@@ -270,18 +283,4 @@ footer {
 }
 #footernav li a {
         color: #f07877;
-}
-dt {
-    color: #74A495;
-    font-size: 1.15em;
-    font-weight: bold;
-    padding-bottom: 0.5em;
-}
-
-dd {
-    padding-bottom: 1.15em;
-}
-
-#dogsize th{
-    color: #74A495;
 }
