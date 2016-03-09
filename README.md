@@ -40,3 +40,8 @@ Lacelei
 
 Ariana
 -Booking
+
+My SQL
+username: a7753653
+password: j0j0dog
+email: mtius@my.bcit.ca
