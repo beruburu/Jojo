@@ -4,23 +4,23 @@
     <head>
         <meta charset="utf-8" />
         <title>Jojo's Dog Grooming - FAQs</title>
-        <link rel="stylesheet" href="../Style/base.css" media="screen">
-        <link rel="stylesheet" href="../Style/printstyle.css" media="print">
+        <link rel="stylesheet" href="Style/base.css" media="screen">
+        <link rel="stylesheet" href="Style/printstyle.css" media="print">
     </head>
     <body>
         <div id="signin">
-            <a href="../signin.html">sign in/register</a>
+            <a href="signin.html">sign in/register</a>
         </div> 
         <header>
-			<a href="../index.html"><h1><img src="../Images/logo.png"
+			<a href="index.html"><h1><img src="Images/logo.png"
                  width="200" height="200" alt="Jojo's Dog Grooming-Home"></h1></a>
 		</header>
         <nav>
             <div class="dropdown">
                 <ul id="nav">
-                    <li><a href="../aboutUs.html">About Us</a></li>
-                    <li><a href="../testimonials.html">Testimonials</a></li>
-                    <li><a href="../services.html" id="drop">Services</a>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="testimonials.html">Testimonials</a></li>
+                    <li><a href="services.html" id="drop">Services</a>
 					    <div class="dropdowncontent">
 						    <ul>
                                 <li><a href="pricing.html">Pricing</a></li>
@@ -28,7 +28,7 @@
 					            <li><a href="faqs.html">FAQs</a></li>
                             </ul>
 			            </div></li>
-                    <li><a href="../contactus.html">Contact Us</a></li>
+                    <li><a href="contactus.html">Contact Us</a></li>
                 </ul>
             </div>
         </nav>
@@ -36,7 +36,7 @@
         <div id="content">
             <div id="leftcol">
 				<p>Find the answers to your questions here!<p>
-				<img src="../Images/placeholder.jpg" alt="add image here" width="250" height="250">
+				<img src="Images/placeholder.jpg" alt="add image here" width="250" height="250">
 			</div>
             
             <div id="rightcol">
@@ -61,11 +61,12 @@
                                 <!--
                                 This is where the questions are linked to.
                                 -->
-                                <dt><h3>What is the difference between the basic and full grooming?</h3></dt>
+                                <dt id="Answer1">What is the difference between the basic and full grooming?</dt>
                                     <dd>The basic grooming consists of bathing, ear cleaning, conditioning treatments and shampooing. The full grooming comes with all of the services mentioned in the pricing page.</dd>
-                                <dt><h3>How are the sizes of dogs determined?</h3></dt>               
-                                    <dd>The sizes are determined by their weight.</dd>
-                                    <table style="width: 75%">
+                                <dt id="Answer2">How are the sizes of dogs determined?</dt>               
+                                    <dd>The sizes are determined by their weight.
+                                        <p></p>
+                                    <table id="dogsize" style="width: 75%">
                                         <tr>
                                             <th>Size</th>
                                             <th>Weight</th>
@@ -82,21 +83,22 @@
                                             <td>Large</td>
                                             <td>51 to 80 pounds</td>
                                         </tr>
-                                    </table>
-                                <dt><h3>How do I book an appointment online?</h3></dt>
+                                    </table></dd>
+                                                   
+                                <dt id="Answer3">How do I book an appointment online?</dt>
                                     <dd>You have to create a profile through our website. Through that, you will be able to gain access to our booking.</dd>
-                                <dt><h3>Do you accept walk-ins?</h3></dt>
-                                    <dd>Yes! However, it is best if you call ahead before visiting us.</dd>
+                                <dt id="Answer4">Do you accept walk-ins?</dt>
+                                    <dd>Unfortunately, we do not accept walk-ins. You will have to register online and book an appointment with us, or you may call us at (604) 983-0030.</dd>
                             </dl>    
             </div>
         </div>
         <footer>
 		    <p>Follow us:</p>
-            <p><a href="#"><img src="../Images/facebook.png"
+            <p><a href="#"><img src="Images/facebook.png"
                  width="50" height="50" alt="Facebook"></a>
-                <a href="#"><img src="../Images/instagram.png"
+                <a href="#"><img src="Images/instagram.png"
                  width="50" height="50" alt="instagram"></a>
-                <a href="#"><img src="../Images/twitter.png"
+                <a href="#"><img src="Images/twitter.png"
                  width="50" height="50" alt="Twitter"></a></p>
 		</footer>
     </body>
