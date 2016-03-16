@@ -85,6 +85,10 @@ dd {
     color: #333;
 }
 
+#dogsize {
+    margin-top: -1.35em;
+}
+
 /*Removes the header margins.*/
 header {
     background: url("../Images/headerBackground.png");
