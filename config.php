@@ -1,7 +1,7 @@
 <?php
-    define('DB_HOST', 'sql8.000webhost.com');
-    define('DB_USER', 'a7753653_admin');
-    define('DB_PASSWORD', 'j0j0dog');
-    define('DB_DATABASE', 'a7753653_jojo');
+    define('DB_HOST', 'bcitdevcom.ipagemysql.com');
+    define('DB_USER', 'comp153608');
+    define('DB_PASSWORD', 'Comp-1536*08');
+    define('DB_DATABASE', 'comp153608');
     define('HOMEURL', 'valid url');
 ?>
