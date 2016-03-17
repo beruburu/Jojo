@@ -3,7 +3,7 @@ CREATE DATABASE jojo;
 
 USE jojo;
 
-CREATE TABLE  `a7753653_jojo`.`userRegistration` (
+CREATE TABLE  userRegistration (
 	firstName VARCHAR( 100 ) NOT NULL,
 	lastName VARCHAR( 100 ) NOT NULL,
 	phoneNumber VARCHAR( 100 ) NOT NULL,
