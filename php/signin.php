@@ -1,15 +1,5 @@
 <?php
-	require_once('config.php');
-
-	// Connect to server and select database.
-	mysql_connect(DB_HOST, DB_USER, DB_PASSWORD)or die("cannot connect");
-	mysql_select_db(DB_DATABASE)or die("cannot select DB");
-	$tbl_name="userRegistration"; // Table name
-
-
-	$sql="SELECT * FROM $tbl_name ORDER BY id DESC";
-	// ORDER BY id DESC is order result by descending
-	$result=mysql_query($sql);
+	session_start();
 ?>
 
 <!DOCTYPE html>
@@ -23,6 +13,17 @@
     </head>
     
     <body>
+		
+		<?php
+			if( isset($_SESSION['ERRMSG_ARR']) && is_array($_SESSION['ERRMSG_ARR']) && count($_SESSION['ERRMSG_ARR']) >0 ) {
+				echo '<ul class="err">';
+				foreach($_SESSION['ERRMSG_ARR'] as $msg) {
+					echo '<li>',$msg,'</li>'; 
+				}
+				echo '</ul>';
+				unset($_SESSION['ERRMSG_ARR']);
+			}
+		?>
         
         <div id="signin">
             <a href="signin.php">sign in/register</a>
@@ -73,7 +74,7 @@
 			<div id="rightcol">
 				<!--Regstration form begins here-->
 				<h2>Register</h2>
-					<form name="register" method="post" id="register" action="http://webdevfoundations.net/scripts/formdemo.asp" onsubmit="return validateRegister()">
+					<form name="register" method="post" id="register" action="register.php" onsubmit="return validateRegister()">
 						<fieldset>
 						<legend>Owner</legend>
 					    <div id="firstmsg" style="color:Red;display:none">Please enter your first name</div>
