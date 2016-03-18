@@ -39,6 +39,8 @@
 	$email = clean($_POST['email']);
 	$pass = clean($_POST['pass']);
 	$confirmpass = clean($_POST['confirmpass']);
+	$dogName = clean($_POST['dogname']);
+	$dogBreed = clean($_POST['dogbreed'])
 	
 	//Input Validations
 	if($firstname == '') {
@@ -95,12 +97,12 @@
 	}
 
 	//Create INSERT query
-	$qry = "INSERT INTO userRegistration(firstname, lastname, phone, email, pass) VALUES('$firstname','$lastname','$phone','$email','".md5($_POST['pass'])."')";
+	$qry = "INSERT INTO userRegistration(firstname, lastname, phoneNumber, email, password, dogName, dogBreed) VALUES('$firstname','$lastname','$phone','$email','".md5($_POST['pass'])."','$dogName','$dogBreed')";
 	$result = @mysql_query($qry);
 	
 	//Check whether the query was successful or not
 	if($result) {
-		header("location: login.php?login=".$email."&pass=".$pass);
+		header("location: login.php?email=".$email."&pass=".$pass);
 		exit();
 	}else {
 		die("Query failed");
