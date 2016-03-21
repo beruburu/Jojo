@@ -1,0 +1,15 @@
+DROP DATABASE comp153608;
+CREATE DATABASE comp153608;
+
+USE comp153608;
+
+CREATE TABLE  userRegistration (
+	firstName VARCHAR( 100 ) NOT NULL,
+	lastName VARCHAR( 100 ) NOT NULL,
+	phoneNumber VARCHAR( 100 ) NOT NULL,
+	email VARCHAR( 100 ) NOT NULL,
+	password VARCHAR( 100 ) NOT NULL,
+	dogName VARCHAR( 100 ) NOT NULL,
+	dogBreed VARCHAR( 100 ) NOT NULL,
+	PRIMARY KEY (email)
+) ENGINE = MYISAM
