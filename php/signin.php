@@ -54,7 +54,7 @@
             <div id="leftcol">
 				<!--Sign in form begins here-->
 				<h2>Sign In</h2>
-					<form name="signinform" method="post" id="signinform" action="http://webdevfoundations.net/scripts/formdemo.asp" onsubmit="return validateSignIn()">
+					<form name="signinform" method="post" id="signinform" action="login.php" onsubmit="return validateSignIn()">
 					<div id="emailmsg" style="color:Red;display:none">Please enter a valid email address</div>
                     <label for="email">Email:</label>
 					<br>
