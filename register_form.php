@@ -54,17 +54,17 @@
         <nav>
             <div class="dropdown">
                 <ul id="nav">
-                    <li><a href="aboutus.html">About Us</a></li>
-                    <li><a href="testimonials.html">Testimonials</a></li>
-                    <li><a href="services.html" id="drop">Services</a>
+                    <li><a href="aboutus.php">About Us</a></li>
+                    <li><a href="testimonials.php">Testimonials</a></li>
+                    <li><a href="services.php" id="drop">Services</a>
 					    <div class="dropdowncontent">
 						    <ul>
-                                <li><a href="Services/pricing.html">Pricing</a></li>
-					            <li><a href="Services/booking.html">Booking</a></li>
-					            <li><a href="Services/faqs.html">FAQs</a></li>
+                                <li><a href="pricing.php">Pricing</a></li>
+					            <li><a href="booking.php">Booking</a></li>
+					            <li><a href="faqs.php">FAQs</a></li>
                             </ul>
 			            </div></li>
-                    <li><a href="contactus.html">Contact Us</a></li>
+                    <li><a href="contactus.php">Contact Us</a></li>
                 </ul>
             </div>
         </nav>
@@ -75,7 +75,6 @@
 			</div>
 			<div id="rightcol">
 				<!--Regstration form begins here-->
-				<h2>Register</h2>
 
                     <?php
 	                    if( isset($_SESSION['ERRMSG_ARR']) && is_array($_SESSION['ERRMSG_ARR']) && count($_SESSION['ERRMSG_ARR']) >0 ) {
@@ -89,32 +88,25 @@
                     ?>
 
                     <form id="registerForm" name="registerForm" method="post" action="register.php">
-                        <table width="300" border="0" align="center" cellpadding="2" cellspacing="0">
-                            <tr>
-                                <th>First Name </th>
-                                <td><input name="fname" type="text" class="textfield" id="fname" /></td>
-                            </tr>
-                            <tr>
-                                <th>Last Name </th>
-                                <td><input name="lname" type="text" class="textfield" id="lname" /></td>
-                            </tr>
-                            <tr>
-                                <th width="124">Login</th>
-                                <td width="168"><input name="login" type="text" class="textfield" id="login" /></td>
-                            </tr>
-                            <tr>
-                                <th>Password</th>
-                                <td><input name="password" type="password" class="textfield" id="password" /></td>
-                            </tr>
-                            <tr>
-                                <th>Confirm Password </th>
-                                <td><input name="cpassword" type="password" class="textfield" id="cpassword" /></td>
-                            </tr>
-                            <tr>
-                                <td>&nbsp;</td>
-                                <td><input type="submit" name="Submit" value="Register" /></td>
-                            </tr>
-                        </table>
+						<fieldset>
+							<legend>Register</legend>
+                 			<label for="firstname">First Name: </label><br>
+                       	 	<input name="firstname" type="text" id="firstname" size="60">
+							<br><br>
+                    		<label for="lastname">Last Name: </label><br>
+                  		  	<input name="lastname" type="text" class="textfield" id="lastname" size="60">
+							<br><br>
+                    		<label for="emai">Email: </label><br>
+                    		<input name="email" type="text" id="email" size="60">
+							<br><br>
+                       	 	<label for="pass">Password: </label><br>
+                        	<input name="pass" type="password" id="pass" size="60">
+							<br><br>
+                        	<label for="confirmpass">Confirm Password: </label><br>
+                        	<input name="confirmpass" type="password" id="confirmpass" size="60">
+							<br><br>
+                        	<input type="submit" name="Submit" value="Register" /></td>
+						</fieldset>
                     </form>
             </div>
         </div>
@@ -123,13 +115,13 @@
                 <ul>
                     <li><a href="login_form.php">Login</a></li>
                     <li><a href="register_form.php">Register</a></li>
-                    <li><a href="aboutUs.html">About Us</a></li>
-                    <li><a href="testimonials.html">Testimonials</a></li>
-                    <li><a href="services.html">Services</a>
-                    <li><a href="Services/pricing.html">Pricing</a></li>
-					<li><a href="Services/booking.html">Booking</a></li>
-					<li><a href="Services/faqs.html">FAQs</a></li>
-                    <li><a href="contactus.html">Contact Us</a></li>
+                    <li><a href="aboutUs.php">About Us</a></li>
+                    <li><a href="testimonials.php">Testimonials</a></li>
+                    <li><a href="services.php">Services</a>
+                    <li><a href="Services/pricing.php">Pricing</a></li>
+					<li><a href="Services/booking.php">Booking</a></li>
+					<li><a href="Services/faqs.php">FAQs</a></li>
+                    <li><a href="contactus.php">Contact Us</a></li>
                 </ul>
             </div>
             <p>Follow us:</p>
