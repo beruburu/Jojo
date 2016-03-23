@@ -34,7 +34,7 @@
 			if (isLoggedIn()){
                 echo 'Welcome back, ' . strtoupper($_SESSION['SESS_FIRST_NAME']) . '!<br/>';
 				echo '<a href="logout.php">Logout</a><br/>';
-				echo '<a href="account.html">Account</a><br/>';
+				echo '<a href="account.html">Your Account</a><br/>';
 			} else {
 				echo '<a href="login_form.php">Login</a><br/>';
 				echo '<a href="register_form.php">New user?</a>';
