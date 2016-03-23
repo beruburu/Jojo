@@ -288,3 +288,22 @@ footer {
 #footernav li a {
         color: #f07877;
 }
+
+/*The pricing table*/
+#pricetable th {
+    color: #FFFFFF; 
+    background-color: #F07877;             
+    padding: 12px;             
+    border-bottom: 2px solid #F07877;             
+    border-top: 2px solid #F07877;             
+    border-right: 2px solid #F07877;
+}
+#pricetable td {
+    padding: 8px;            
+    border-bottom: 2px solid #F07877;        
+}
+            
+#pricetable tr:nth-child(even) {
+    background-color: #fce4e3
+}
+            
