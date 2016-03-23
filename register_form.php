@@ -22,25 +22,10 @@
     <body>
         
         <div id="signin">
-            <?php
-			$sql="SELECT * FROM $tbl_name ORDER BY id DESC";
-			$result=mysql_query($sql);
-			$count = min(5, mysql_num_rows($result));
-			if($count==0)
-				echo "<li>No topics</li>";
-			else
-				for($i=0; $i < $count; $i++){
-					$row=mysql_fetch_array($result);
-					echo '<li><a href="view_topic.php?id='.$row['id'].'">'.$row['topic'].'</a></li>';
-				}
-		    ?>
-            <br>
 		    <?php
 			if (isLoggedIn()){
                 echo 'Welcome back, ' . strtoupper($_SESSION['SESS_FIRST_NAME']) . '!<br/>';
 				echo '<a href="logout.php">Logout</a><br/>';
-				echo '<a href="forum.php">Go to forum</a><br/>';
-				echo '>><a href="add_topic_form.php">Create new topic</a>';
 			} else {
 				echo '<a href="login_form.php">Login</a><br/>';
 				echo '<a href="register_form.php">New user?</a>';
