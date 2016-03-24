@@ -317,4 +317,7 @@ footer {
 #pricetable tr:nth-child(even) {
     background-color: #fce4e3
 }
-            
+/*The services list*/
+#serviceli ul {
+    list-style-image: url('../Images/pawprint1.png');
+}
