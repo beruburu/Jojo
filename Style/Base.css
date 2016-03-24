@@ -24,7 +24,7 @@ strong {
 #cockerspaniel {
     float: right;
     position: relative;
-    top: 60px;
+    top: 0;
     left: 250px;
     margin-right: 0px;
 }
@@ -317,12 +317,4 @@ footer {
 #pricetable tr:nth-child(even) {
     background-color: #fce4e3
 }
-
-/*The services list*/
-#serviceli ul {
-    list-style-image: url('../Images/pawprint.png');
-}
             
-#serviceli li {
-    padding: 4px;
-}
