@@ -72,10 +72,9 @@
                 The form contains the calendar and the time, where the user can input
                 their wanted appointment and submit it into the database.
                 -->
-                <form method="post"
-                action="http://webdevbasics.net/scripts/demo.php">
-                <h2>Booking</h2>
-					<form name="booking" method="post" id="booking" action="http://webdevfoundations.net/scripts/formdemo.asp" onsubmit="return validateRegister()">
+				<form name="booking" method="post" id="booking" action="http://webdevfoundations.net/scripts/formdemo.asp" onsubmit="return validateRegister()">
+					<fieldset>
+						<legend>Booking</legend>
 					    <div id="firstmsg" style="color:Red;display:none">Please enter your first name</div>
 						<label for="firstname">First Name:</label>
 						<br>
@@ -131,6 +130,7 @@
                         <br>
                         <br>
                         <input type="submit" value="Submit">
+					</fieldset>
                 </form>
             </div>
         </div>
