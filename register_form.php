@@ -76,20 +76,20 @@
                     <form id="registerForm" name="registerForm" method="post" action="register.php">
 						<fieldset>
 							<legend>Register</legend>
-                 			<label for="firstname">First Name: </label><br>
-                       	 	<input name="firstname" type="text" id="firstname" size="60">
+                 			<label for="fname">First Name: </label><br>
+                       	 	<input name="fname" type="text" id="fname" size="60">
 							<br><br>
-                    		<label for="lastname">Last Name: </label><br>
-                  		  	<input name="lastname" type="text" class="textfield" id="lastname" size="60">
+                    		<label for="lname">Last Name: </label><br>
+                  		  	<input name="lname" type="text" class="textfield" id="lname" size="60">
 							<br><br>
-                    		<label for="emai">Email: </label><br>
-                    		<input name="email" type="text" id="email" size="60">
+                    		<label for="login">Email: </label><br>
+                    		<input name="login" type="text" id="login" size="60">
 							<br><br>
-                       	 	<label for="pass">Password: </label><br>
-                        	<input name="pass" type="password" id="pass" size="60">
+                       	 	<label for="password">Password: </label><br>
+                        	<input name="password" type="password" id="password" size="60">
 							<br><br>
-                        	<label for="confirmpass">Confirm Password: </label><br>
-                        	<input name="confirmpass" type="password" id="confirmpass" size="60">
+                        	<label for="cpassword">Confirm Password: </label><br>
+                        	<input name="cpassword" type="password" id="cpassword" size="60">
 							<br><br>
                         	<input type="submit" name="Submit" value="Register" /></td>
 						</fieldset>
