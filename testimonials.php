@@ -65,7 +65,7 @@
 		<div id="content">
             <div id="leftcol">
                 <!--Testimonials will appear in this <p> tag using JavaScript-->
-				<p>Click on a puppy to view their testimonial!</p>
+				<p><strong>Click on a puppy to view their testimonial!</strong></p>
 				<p id="testimonial"> </p>
             </div>
             
