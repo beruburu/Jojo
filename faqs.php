@@ -1,36 +1,62 @@
+<?php
+	include 'functions.php';
+	require_once('config.php');
+	session_start();
+
+	// Connect to server and select database.
+	mysql_connect(DB_HOST, DB_USER, DB_PASSWORD)or die("cannot connect, error: ".mysql_error());
+	mysql_select_db(DB_DATABASE)or die("cannot select DB, error: ".mysql_error());
+	$tbl_name="topic"; // Table name
+?>
+
+	
+<!-- ==========================================================	-->
+<!--	Created by Devit Schizoper                          	-->
+<!--	Created HomePages http://LoadFoo.starzonewebhost.com   	-->
+<!--	Created Day 01.12.2006                              	-->
+<!-- ========================================================== -->
+
 <!DOCTYPE html>
 
 <html lang="en">
     <head>
         <meta charset="utf-8" />
         <title>Jojo's Dog Grooming - Booking</title>
-        <link rel="stylesheet" href="../Style/base.css" media="screen">
-        <link rel="stylesheet" href="../Style/printstyle.css" media="print">
+        <link rel="stylesheet" href="Style/base.css" media="screen">
+        <link rel="stylesheet" href="Style/printstyle.css" media="print">
     </head>
     
     <body>
         
         <div id="signin">
-            <a href="../signin.html">sign in/register</a>
+			<?php
+				if (isLoggedIn()){
+	                echo 'Welcome back, ' . strtoupper($_SESSION['SESS_FIRST_NAME']) . '!<br/>';
+					echo '<a href="logout.php">Logout</a><br/>';
+				} else {
+					echo '<a href="login_form.php">Login</a><br/>';
+					echo '<a href="register_form.php">New user?</a>';
+				}
+			?>
         </div> 
         <header>
-		    <a href="../index.html"><h1><img src="../Images/logo.png"
+		    <a href="index.php"><h1><img src="Images/logo.png"
                  width="200" height="200" alt="Jojo's Dog Grooming-Home"></h1></a>
 		</header>
         <nav>
             <div class="dropdown">
                 <ul id="nav">
-                    <li><a href="../aboutUs.html">About Us</a></li>
-                    <li><a href="../testimonials.html">Testimonials</a></li>
-                    <li><a href="../services.html" id="drop">Services</a>
+                    <li><a href="aboutUs.php">About Us</a></li>
+                    <li><a href="testimonials.php">Testimonials</a></li>
+                    <li><a href="services.php" id="drop">Services</a>
 					    <div class="dropdowncontent">
 						    <ul>
-                                <li><a href="pricing.html">Pricing</a></li>
-					            <li><a href="booking.html">Booking</a></li>
-					            <li><a href="faqs.html">FAQs</a></li>
+                                <li><a href="pricing.php">Pricing</a></li>
+					            <li><a href="booking.php">Booking</a></li>
+					            <li><a href="faqs.php">FAQs</a></li>
                             </ul>
 			            </div></li>
-                    <li><a href="../contactus.html">Contact Us</a></li>
+                    <li><a href="contactus.php">Contact Us</a></li>
                 </ul>
             </div>
         </nav>
@@ -38,7 +64,7 @@
         <div id="content">
             <div id="leftcol">
 				<p>Find the answers to your questions here!<p>
-				<img src="../Images/havanese.png" alt="havanese.png" width="250" height="250">
+				<img src="Images/havanese.png" alt="havanese.png" width="250" height="250">
 			</div>
             
             <div id="rightcol">
@@ -99,14 +125,14 @@
         <footer>
 		    <div id="footernav">
                 <ul>
-                    <li><a href="../signIn.html">Sign in / Register</a></li>
-                    <li><a href="../aboutus.html">About Us</a></li>
-                    <li><a href="../testimonials.html">Testimonials</a></li>
-                    <li><a href="../services.html">Services</a>
-                    <li><a href="pricing.html">Pricing</a></li>
-					<li><a href="booking.html">Booking</a></li>
-					<li><a href="faqs.html">FAQs</a></li>
-                    <li><a href="../contactus.html">Contact Us</a></li>
+                    <li><a href="signIn.php">Sign in / Register</a></li>
+                    <li><a href="aboutus.php">About Us</a></li>
+                    <li><a href="testimonials.php">Testimonials</a></li>
+                    <li><a href="services.php">Services</a>
+                    <li><a href="pricing.php">Pricing</a></li>
+					<li><a href="booking.php">Booking</a></li>
+					<li><a href="faqs.php">FAQs</a></li>
+                    <li><a href="contactus.php">Contact Us</a></li>
                 </ul>
             </div>
             <p>Follow us:</p>
