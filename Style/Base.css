@@ -24,7 +24,7 @@ strong {
 #cockerspaniel {
     float: right;
     position: relative;
-    top: 0;
+    top: 60px;
     left: 250px;
     margin-right: 0px;
 }
@@ -320,4 +320,8 @@ footer {
 /*The services list*/
 #serviceli ul {
     list-style-image: url('../Images/pawprint1.png');
+}
+
+#serviceli li {
+    padding: 4px;
 }

@@ -73,11 +73,11 @@
                     <form id="loginForm" name="loginForm" method="post" action="login.php">
 						<fieldset>
 							<legend>Sign In</legend>
-							<label for="email">Email: </label><br>
-							<input name="email" type="text" id="login" size="60">
+							<label for="login">Email: </label><br>
+							<input name="login" type="text" id="login" size="60">
 							<br><br>
 							<label for="pass">Password: </label><br>
-							<input name="pass" type="password" id="pass" size="60">
+							<input name="password" type="password" id="password" size="60">
 							<br><br>
 							<input type="submit" name="Submit" value="Sign In">
 						</fieldest>
