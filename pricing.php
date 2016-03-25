@@ -64,7 +64,8 @@
 		<div id="content">
             <!--Lists services in an unordered list-->
             <div id="leftcol">
-				<p>We offer many services here at Jojo's, including:</p>
+				<p><strong>We offer many services here at Jojo's, including:</strong></p>
+                <div id="serviceli">
                 <ul>
                     <li>Hair Clipping</li>
                     <li>Bathing</li>
@@ -77,6 +78,7 @@
                     <li>De-Matting</li>
                     <li>De-Skunking</li>
                 </ul>
+                </div>
 			</div>
             <!--Creates pricing table-->
 			<div id="rightcol">
