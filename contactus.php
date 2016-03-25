@@ -1,3 +1,20 @@
+<?php
+	include 'functions.php';
+	require_once('config.php');
+	session_start();
+
+	// Connect to server and select database.
+	mysql_connect(DB_HOST, DB_USER, DB_PASSWORD)or die("cannot connect, error: ".mysql_error());
+	mysql_select_db(DB_DATABASE)or die("cannot select DB, error: ".mysql_error());
+	$tbl_name="topic"; // Table name
+?>
+	
+<!-- ==========================================================	-->
+<!--	Created by Devit Schizoper                          	-->
+<!--	Created HomePages http://LoadFoo.starzonewebhost.com   	-->
+<!--	Created Day 01.12.2006                              	-->
+<!-- ========================================================== -->
+
 <!DOCTYPE html>
 
 <html lang="en">
@@ -11,7 +28,15 @@
     <body>
         
         <div id="signin">
-            <a href="signin.php">sign in/register</a>
+			<?php
+				if (isLoggedIn()){
+	                echo 'Welcome back, ' . strtoupper($_SESSION['SESS_FIRST_NAME']) . '!<br/>';
+					echo '<a href="logout.php">Logout</a><br/>';
+				} else {
+					echo '<a href="login_form.php">Login</a><br/>';
+					echo '<a href="register_form.php">New user?</a>';
+				}
+			?>
         </div> 
         <header>
 			<a href="index.php"><h1><img src="Images/logo.png"
