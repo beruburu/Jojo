@@ -81,14 +81,14 @@
             <!--Creates pricing table-->
 			<div id="rightcol">
 				<h2>Pricing</h2>
-                <table>
+                <table id="pricetable">
                     <tr>
 						<th>Size</th>
                         <th>Basics</th>
                         <th>Full Groom</th>
                     </tr>
 					<tr>
-						<td colspan="3">&nbsp;</td>
+						<!--<td colspan="3">&nbsp;</td>-->
 					</tr>
                     <tr>
                         <td>Small Dogs</td>
@@ -111,6 +111,7 @@
                         <td></td>
                     </tr>
                 </table>
+                <img src="Images/cockerSpaniel.png" alt="cockerspaniel" height="300" width="300" id="cockerspaniel">
 			</div>
         </div>
 		<footer>
