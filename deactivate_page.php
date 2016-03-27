@@ -72,7 +72,7 @@
             
 			<div id="rightcol">
 				<!--Displays account information, will appear in place of the Sign In/Register page-->
-				<h2>Deactivation Successfulw</h2>
+				<h2>Deactivation Successful</h2>
 				<p>Sorry to see you go!</p>
 			</div>
         </div>
