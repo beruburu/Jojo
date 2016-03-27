@@ -42,7 +42,7 @@
 		?>
 	    </div> 
         <header>
-		    <a href="index.html"><h1><img src="Images/logo.png"
+		    <a href="index.php"><h1><img src="Images/logo.png"
                  width="200" height="200" alt="Jojo's Dog Grooming-Home"></h1></a>
 		</header>
         <nav>
