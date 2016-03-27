@@ -331,6 +331,8 @@ footer {
 	color: #ffffff;
 	font-size: .75em;
 	padding: 5px;
+	margin-left: -10px;
+	margin-right: -10px;
 	margin-bottom: -10px;
 }
 #credits a {
