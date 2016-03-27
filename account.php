@@ -34,17 +34,15 @@
 			if (isLoggedIn()){
                 echo 'Welcome back, ' . strtoupper($_SESSION['SESS_FIRST_NAME']) . '!<br/>';
 				echo '<a href="logout.php">Logout</a><br/>';
-				echo '<a href="account.php">Your Account</a><br/>';
+				echo '<a href="account.html">Your Account</a><br/>';
 			} else {
 				echo '<a href="login_form.php">Login</a><br/>';
 				echo '<a href="register_form.php">New user?</a>';
 			}
 		?>
-	    </div>
+	    </div> 
         <header>
-
-            <!--Logo picture directing back to home page-->
-			<a href="index.php"><h1><img src="Images/logo.png"
+		    <a href="index.html"><h1><img src="Images/logo.png"
                  width="200" height="200" alt="Jojo's Dog Grooming-Home"></h1></a>
 		</header>
         <nav>
@@ -68,37 +66,35 @@
         </nav>
         
 		<div id="content">
-
-            <!--Welcome section-->
             <div id="leftcol">
-				<h2>Welcome</h2>
-                <p>Here at <strong>Jojo’s Dog Grooming,</strong> your dog’s well-being is our top concern.</p>
-                <p>Our <strong>certified groomer</strong> uses top of the line products to ensure that your pups will leave healthy, 
-                smelling and feeling amazing.</p>
-                <p>Your dog will always have a day of <strong>tail-wagging fun</strong> when you choose
-                <strong>Jojo’s Dog Grooming.</strong></p>
-                <p>When you bring your dog to the groomers, you expect <strong>exceptional service</strong>,
-                along with reasonable and <strong>affordable prices.</strong></p>
-                <p>That’s why at <strong>Jojo’s Dog Grooming,</strong> we provide the
-                utmost attention to your dog’s needs.</p>
-				<img src="Images/poodle.png" alt="poodle" height="300" width="300">
+				<img src="Images/placeholder.jpg" width="250" height="250" alt="placeholder">
 			</div>
             
 			<div id="rightcol">
-
-                <!--News updates-->
-				<h2>News</h2>
-				<h3>Jojo's Dog Grooming is going online!</h3>
-                <p>Greetings!</p>
-                <p>We are setting up a new website to provide better service to our customers.</p>    
-                <p>Take a look around. <a href="signin.php">Register</a> and sign in to the site to receive news, deals and special offers.</p>
-                <p>You can now book your appointments online through our <a href="booking.php">Booking</a> page.</p>
-                <p>Check out our <a href="pricing.php">Pricing</a> page for a list of dog services we are providing.</p>
-                <p>Our <a href="faqs.php">FAQs</a> page will answer our most frequently asked questions.</p>
+				<!--Displays account information, will appear in place of the Sign In/Register page-->
+				<h2>Account</h2>
+				<ul>
+					<li><label>First Name: </label></li>
+					<li><?=strtoupper($_SESSION['SESS_FIRST_NAME'])?></li>
+					<li><label>Last Name: </label></li>
+					<li><?=strtoupper($_SESSION['SESS_LAST_NAME'])?></li>
+					<li><label>Phone Number: </label></li>
+					<li><!--User's phone number--></li>
+					<li><label>Email: </label></li>
+					<li><!--User's email--></li>
+					<li><label>Dog Name: </label></li>
+					<li><!--Dog's name--></li>
+					<li><label>Dog Breed: </label></li>
+					<li><!--Dog's breed--></li>
+					<!--Additional dogs will appear underneath-->
+					<li><a href="accountedit.html">Edit Account</a></li>
+				</ul>
 			</div>
         </div>
-
-        <!--Establishes the footer section-->
+		<div id="aside">
+		</div>
+		<div id="account">
+		</div>
 		<footer>
 		    <div id="footernav">
                 <ul>
