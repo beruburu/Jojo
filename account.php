@@ -81,7 +81,7 @@
 					<li><label>Phone Number: </label></li>
 					<li><!--User's phone number--></li>
 					<li><label>Email: </label></li>
-					<li><!--User's email--></li>
+					<li><?=strtoupper($_SESSION['SESS_EMAIL'])?></li>
 					<li><label>Dog Name: </label></li>
 					<li><!--Dog's name--></li>
 					<li><label>Dog Breed: </label></li>
