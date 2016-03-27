@@ -30,7 +30,6 @@
         
         <!--Sign in/Register link-->
         <div id="signin">
-        <div id="signin">
 			<?php
 				if (isLoggedIn()){
 	                echo 'Welcome back, ' . strtoupper($_SESSION['SESS_FIRST_NAME']) . '!<br/>';
