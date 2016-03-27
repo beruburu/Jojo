@@ -26,7 +26,7 @@
     {
     die('Could not delete data: ' . mysql_error());
     }
-    echo "Deleted data successfully\n";
+    header("Location: deactivate_page.php");
     mysql_close($link);
 
 ?>
