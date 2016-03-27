@@ -78,16 +78,8 @@
 					<li><?=strtoupper($_SESSION['SESS_FIRST_NAME'])?></li>
 					<li><label>Last Name: </label></li>
 					<li><?=strtoupper($_SESSION['SESS_LAST_NAME'])?></li>
-					<li><label>Phone Number: </label></li>
-					<li><!--User's phone number--></li>
 					<li><label>Email: </label></li>
-					<li><!--User's email--></li>
-					<li><label>Dog Name: </label></li>
-					<li><!--Dog's name--></li>
-					<li><label>Dog Breed: </label></li>
-					<li><!--Dog's breed--></li>
-					<!--Additional dogs will appear underneath-->
-					<li><a href="accountedit.html">Edit Account</a></li>
+					<li><?=strtoupper($_SESSION['SESS_LOGIN'])?></li>
 				</ul>
 			</div>
         </div>
