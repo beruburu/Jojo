@@ -27,9 +27,8 @@
 		die("Unable to select database");
 	}
 
-    //Sanitize the REQUEST values - parameters may come from GET or POST
 	$id = $_SESSION['SESS_MEMBER_ID'];
-
+    // Create query
     $sql = "DELETE FROM members WHERE member_id='$id'";
 
     mysql_select_db(DB_DATABASE);

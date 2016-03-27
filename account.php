@@ -83,7 +83,7 @@
 					<li><label>Email: </label></li>
 					<li><?=strtoupper($_SESSION['SESS_LOGIN'])?></li>
 				</ul>
-				<form method="post" action="unactivate.php">
+				<form method="post" action="deactivate.php">
                 <input type="submit" name="Submit" value="Unregister">
                 </form>
 			</div>
