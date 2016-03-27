@@ -102,12 +102,12 @@
                 <ul>
                     <li><a href="login_form.php">Login</a></li>
                     <li><a href="register_form.php">Register</a></li>
-                    <li><a href="aboutUs.php">About Us</a></li>
+                    <li><a href="aboutus.php">About Us</a></li>
                     <li><a href="testimonials.php">Testimonials</a></li>
                     <li><a href="services.php">Services</a>
-                    <li><a href="Services/pricing.php">Pricing</a></li>
-					<li><a href="Services/booking.php">Booking</a></li>
-					<li><a href="Services/faqs.php">FAQs</a></li>
+                    <li><a href="pricing.php">Pricing</a></li>
+					<li><a href="booking.php">Booking</a></li>
+					<li><a href="faqs.php">FAQs</a></li>
                     <li><a href="contactus.php">Contact Us</a></li>
                 </ul>
             </div>

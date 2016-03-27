@@ -120,6 +120,9 @@
                  width="50" height="50" alt="instagram"></a>
                 <a href="#"><img src="Images/twitter.png"
                  width="50" height="50" alt="Twitter"></a></p>
+			<div id="credits">
+				<a href="http://www.freepik.com/free-photos-vectors/house">House vector designed by Freepik</a>
+			</div>
 		</footer>        
     </body>
 </html>

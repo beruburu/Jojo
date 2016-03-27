@@ -30,7 +30,6 @@
         
         <!--Sign in/Register link-->
         <div id="signin">
-        <div id="signin">
 			<?php
 				if (isLoggedIn()){
 	                echo 'Welcome back, ' . strtoupper($_SESSION['SESS_FIRST_NAME']) . '!<br/>';
@@ -68,7 +67,7 @@
         
 		<div id="content">
             <div id="leftcol">
-				<img src="Images/placeholder.jpg" width="250" height="250" alt="placeholder">
+				<img src="Images/alaskanEskimo.png" width="250" height="250" alt="alaskan eskimo">
 			</div>
             
 			<div id="rightcol">
@@ -77,17 +76,14 @@
 				<ul>
 					<li><label>First Name: </label></li>
 					<li><?=strtoupper($_SESSION['SESS_FIRST_NAME'])?></li>
+					<br>
 					<li><label>Last Name: </label></li>
 					<li><?=strtoupper($_SESSION['SESS_LAST_NAME'])?></li>
+					<br>
 					<li><label>Email: </label></li>
 					<li><?=strtoupper($_SESSION['SESS_LOGIN'])?></li>
-					<li><label>Dog Name: </label></li>
-					<li><!--Dog's name--></li>
-					<li><label>Dog Breed: </label></li>
-					<li><!--Dog's breed--></li>
-					<!--Additional dogs will appear underneath-->
-					<li><a href="accountedit.html">Edit Account</a></li>
 				</ul>
+				<input type="submit" name="Submit" value="Unregister" onclick="<?$sql = "DELETE FROM members WHERE login='$login'"?>">
 			</div>
         </div>
 		<div id="aside">
@@ -99,7 +95,7 @@
                 <ul>
                     <li><a href="login_form.php">Login</a></li>
                     <li><a href="register_form.php">Register</a></li>
-                    <li><a href="aboutUs.html">About Us</a></li>
+                    <li><a href="aboutus.php">About Us</a></li>
                     <li><a href="testimonials.php">Testimonials</a></li>
                     <li><a href="services.php">Services</a>
                     <li><a href="pricing.php">Pricing</a></li>

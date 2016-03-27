@@ -325,3 +325,15 @@ footer {
 #serviceli li {
     padding: 4px;
 }
+/*Credits area for dog vectors*/
+#credits {
+	background-color: #74A495;
+	color: #ffffff;
+	font-size: .75em;
+	padding: 5px;
+	margin-bottom: -10px;
+}
+#credits a {
+	text-decoration: none;
+	color: #ffffff;
+}
