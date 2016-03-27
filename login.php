@@ -67,7 +67,7 @@
 			$_SESSION['SESS_MEMBER_ID'] = $member['member_id'];
 			$_SESSION['SESS_FIRST_NAME'] = $member['firstname'];
 			$_SESSION['SESS_LAST_NAME'] = $member['lastname'];
-            $_SESSION['SESS_EMAIL'] = $member['login'];
+			$_SESSION['SESS_LOGIN'] = $member['login'];
 			session_write_close();
 			header("location: ".HOMEURL);
 			exit();

@@ -42,7 +42,7 @@
 		?>
 	    </div> 
         <header>
-		    <a href="index.html"><h1><img src="Images/logo.png"
+		    <a href="index.php"><h1><img src="Images/logo.png"
                  width="200" height="200" alt="Jojo's Dog Grooming-Home"></h1></a>
 		</header>
         <nav>
@@ -78,10 +78,8 @@
 					<li><?=strtoupper($_SESSION['SESS_FIRST_NAME'])?></li>
 					<li><label>Last Name: </label></li>
 					<li><?=strtoupper($_SESSION['SESS_LAST_NAME'])?></li>
-					<li><label>Phone Number: </label></li>
-					<li><!--User's phone number--></li>
 					<li><label>Email: </label></li>
-					<li><?=strtoupper($_SESSION['SESS_EMAIL'])?></li>
+					<li><?=strtoupper($_SESSION['SESS_LOGIN'])?></li>
 					<li><label>Dog Name: </label></li>
 					<li><!--Dog's name--></li>
 					<li><label>Dog Breed: </label></li>
