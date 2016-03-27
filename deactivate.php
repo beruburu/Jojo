@@ -26,8 +26,12 @@
     {
     die('Could not delete data: ' . mysql_error());
     }
+    unset($_SESSION['SESS_MEMBER_ID']);
+	unset($_SESSION['SESS_FIRST_NAME']);
+	unset($_SESSION['SESS_LAST_NAME']);
+	session_write_close();
     header("Location: deactivate_page.php");
     mysql_close($link);
-
+    exit();
 ?>
 
