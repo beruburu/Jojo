@@ -45,7 +45,7 @@
         <nav>
             <div class="dropdown">
                 <ul id="nav">
-                    <li><a href="aboutUs.php">About Us</a></li>
+                    <li><a href="aboutus.php">About Us</a></li>
                     <li><a href="testimonials.php">Testimonials</a></li>
                     <li><a href="services.php" id="drop">Services</a>
 					    <div class="dropdowncontent">
