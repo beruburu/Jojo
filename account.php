@@ -67,7 +67,7 @@
         
 		<div id="content">
             <div id="leftcol">
-				<img src="Images/placeholder.jpg" width="250" height="250" alt="placeholder">
+				<img src="Images/alaskanEskimo.png" width="250" height="250" alt="alaskan eskimo">
 			</div>
             
 			<div id="rightcol">
