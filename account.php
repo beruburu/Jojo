@@ -67,7 +67,7 @@
         
 		<div id="content">
             <div id="leftcol">
-				<img src="Images/placeholder.jpg" width="250" height="250" alt="placeholder">
+				<img src="Images/alaskanEskimo.png" width="250" height="250" alt="alaskan eskimo">
 			</div>
             
 			<div id="rightcol">
@@ -76,8 +76,10 @@
 				<ul>
 					<li><label>First Name: </label></li>
 					<li><?=strtoupper($_SESSION['SESS_FIRST_NAME'])?></li>
+					<br>
 					<li><label>Last Name: </label></li>
 					<li><?=strtoupper($_SESSION['SESS_LAST_NAME'])?></li>
+					<br>
 					<li><label>Email: </label></li>
 					<li><?=strtoupper($_SESSION['SESS_LOGIN'])?></li>
 				</ul>
