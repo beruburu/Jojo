@@ -91,7 +91,7 @@
 				<h3>Jojo's Dog Grooming is going online!</h3>
                 <p>Greetings!</p>
                 <p>We are setting up a new website to provide better service to our customers.</p>    
-                <p>Take a look around. <a href="signin.php">Register</a> and sign in to the site to receive news, deals and special offers.</p>
+                <p>Take a look around. <a href="register_form.php">Register</a> and sign in to the site to receive news, deals and special offers.</p>
                 <p>You can now book your appointments online through our <a href="booking.php">Booking</a> page.</p>
                 <p>Check out our <a href="pricing.php">Pricing</a> page for a list of dog services we are providing.</p>
                 <p>Our <a href="faqs.php">FAQs</a> page will answer our most frequently asked questions.</p>
