@@ -102,7 +102,7 @@
                 <ul>
                     <li><a href="login_form.php">Login</a></li>
                     <li><a href="register_form.php">Register</a></li>
-                    <li><a href="aboutUs.php">About Us</a></li>
+                    <li><a href="aboutus.php">About Us</a></li>
                     <li><a href="testimonials.php">Testimonials</a></li>
                     <li><a href="services.php">Services</a>
                     <li><a href="Services/pricing.php">Pricing</a></li>
