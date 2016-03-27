@@ -1,9 +1,13 @@
 <?php
 //Start session
-	session_start();
-	
-	//Include database connection details
+	include 'functions.php';
 	require_once('config.php');
+	session_start();
+
+	// Connect to server and select database.
+	mysql_connect(DB_HOST, DB_USER, DB_PASSWORD)or die("cannot connect, error: ".mysql_error());
+	mysql_select_db(DB_DATABASE)or die("cannot select DB, error: ".mysql_error());
+	
 	
 	//Array to store validation errors
 	$errmsg_arr = array();
@@ -24,9 +28,9 @@
 	}
 
     //Sanitize the REQUEST values - parameters may come from GET or POST
-	$login = clean($_REQUEST['login']);
+	$id = $_SESSION['SESS_MEMBER_ID'];
 
-    $sql = "DELETE FROM members WHERE login='$login'";
+    $sql = "DELETE FROM members WHERE member_id='$id'";
 
     mysql_select_db(DB_DATABASE);
     $retval = mysql_query( $sql, $link );
@@ -35,7 +39,7 @@
     die('Could not delete data: ' . mysql_error());
     }
     echo "Deleted data successfully\n";
-    mysql_close($conn);
+    mysql_close($link);
 
 ?>
 

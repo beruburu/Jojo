@@ -83,7 +83,9 @@
 					<li><label>Email: </label></li>
 					<li><?=strtoupper($_SESSION['SESS_LOGIN'])?></li>
 				</ul>
-				<input type="submit" name="Submit" value="Unregister" onclick="<?$sql = "DELETE FROM members WHERE login='$login'"?>">
+				<form method="post" action="unactivate.php">
+                <input type="submit" name="Submit" value="Unregister">
+                </form>
 			</div>
         </div>
 		<div id="aside">
