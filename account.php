@@ -80,12 +80,6 @@
 					<li><?=strtoupper($_SESSION['SESS_LAST_NAME'])?></li>
 					<li><label>Email: </label></li>
 					<li><?=strtoupper($_SESSION['SESS_LOGIN'])?></li>
-					<li><label>Dog Name: </label></li>
-					<li><!--Dog's name--></li>
-					<li><label>Dog Breed: </label></li>
-					<li><!--Dog's breed--></li>
-					<!--Additional dogs will appear underneath-->
-					<li><a href="accountedit.html">Edit Account</a></li>
 				</ul>
 			</div>
         </div>
