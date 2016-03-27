@@ -83,6 +83,7 @@
 					<li><label>Email: </label></li>
 					<li><?=strtoupper($_SESSION['SESS_LOGIN'])?></li>
 				</ul>
+				<input type="submit" name="Submit" value="Unregister">
 			</div>
         </div>
 		<div id="aside">
