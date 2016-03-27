@@ -30,17 +30,17 @@
         
         <!--Sign in/Register link-->
         <div id="signin">
-		<?php
-			if (isLoggedIn()){
-                echo 'Welcome back, ' . strtoupper($_SESSION['SESS_FIRST_NAME']) . '!<br/>';
-				echo '<a href="logout.php">Logout</a><br/>';
-				echo '<a href="account.php">Your Account</a><br/>';
-			} else {
-				echo '<a href="login_form.php">Login</a><br/>';
-				echo '<a href="register_form.php">New user?</a>';
-			}
-		?>
-	    </div>
+			<?php
+				if (isLoggedIn()){
+	                echo 'Welcome back, ' . strtoupper($_SESSION['SESS_FIRST_NAME']) . '!<br/>';
+					echo '<a href="logout.php">Logout</a><br/>';
+					echo '<a href="account.php">Your Account</a><br/>';
+				} else {
+					echo '<a href="login_form.php">Login</a><br/>';
+					echo '<a href="register_form.php">New user?</a>';
+				}
+			?>
+        </div> 
         <header>
 
             <!--Logo picture directing back to home page-->
@@ -91,7 +91,7 @@
 				<h3>Jojo's Dog Grooming is going online!</h3>
                 <p>Greetings!</p>
                 <p>We are setting up a new website to provide better service to our customers.</p>    
-                <p>Take a look around. <a href="signin.php">Register</a> and sign in to the site to receive news, deals and special offers.</p>
+                <p>Take a look around. <a href="register_form.php">Register</a> and sign in to the site to receive news, deals and special offers.</p>
                 <p>You can now book your appointments online through our <a href="booking.php">Booking</a> page.</p>
                 <p>Check out our <a href="pricing.php">Pricing</a> page for a list of dog services we are providing.</p>
                 <p>Our <a href="faqs.php">FAQs</a> page will answer our most frequently asked questions.</p>
