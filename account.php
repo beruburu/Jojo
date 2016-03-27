@@ -24,6 +24,11 @@
         <title>Jojo's Dog Grooming</title>
         <link rel="stylesheet" href="Style/base.css" media="screen">
         <link rel="stylesheet" href="Style/printstyle.css" media="print">
+        <script>
+            function userConfirm() {
+                return confirm("Are you sure you want to unregister your account?");
+            }
+        </script>
     </head>
     
     <body>
@@ -83,7 +88,7 @@
 					<li><label>Email: </label></li>
 					<li><?=strtoupper($_SESSION['SESS_LOGIN'])?></li>
 				</ul>
-				<form method="post" action="deactivate.php">
+				<form onsubmit="return userConfirm()" method="post" action="deactivate.php">
                 <input type="submit" name="Submit" value="Unregister">
                 </form>
 			</div>
