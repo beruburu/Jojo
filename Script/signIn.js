@@ -57,7 +57,7 @@ function validateRegister() {
         return valid;
 }
 function validateFirstName() {
-    var x = document.getElementById("firstname").value;
+    var x = document.getElementById("fname").value;
     if (x === null || x === "") {
         document.getElementById("firstmsg").style.display = "";
         return false;
@@ -68,13 +68,13 @@ function validateFirstName() {
     }
 }
 function focusFirstName() {
-    var x = document.getElementById("firstname").value;
+    var x = document.getElementById("fname").value;
     if (x === null || x === "") {
         document.getElementById("firstmsg").style.display = "none";
     }
 }
 function validateLastName() {
-    var x = document.getElementById("lastname").value;
+    var x = document.getElementById("lname").value;
     if (x === null || x === "") {
         document.getElementById("lastmsg").style.display = "";
         return false;
@@ -85,7 +85,7 @@ function validateLastName() {
     }
 }
 function focusLastName() {
-    var x = document.getElementById("lastname").value;
+    var x = document.getElementById("lname").value;
     if (x === null || x === "") {
         document.getElementById("lastmsg").style.display = "none";
     }
@@ -115,7 +115,7 @@ function focusPhone() {
     }
 }
 function validateRegEmail() {
-    var x = document.getElementById("registeremail").value;
+    var x = document.getElementById("login").value;
     if (x === null || x === "") {
         document.getElementById("emailregmsg").style.display = "";
         return false;
@@ -130,13 +130,13 @@ function validateRegEmail() {
     }
 }
 function focusRegEmail() {
-    var x = document.getElementById("registeremail").value;
+    var x = document.getElementById("login").value;
     if (x === null || x === "") {
         document.getElementById("emailregmsg").style.display = "none";
     }
 }
 function validateRegPassword() {
-    var x = document.getElementById("pass").value;
+    var x = document.getElementById("password").value;
     if (x === null || x === "") {
         document.getElementById("passregmsg").style.display = "";
         return false;
@@ -147,13 +147,13 @@ function validateRegPassword() {
     }
 }
 function focusRegPassword() {
-    var x = document.getElementById("pass").value;
+    var x = document.getElementById("password").value;
     if (x === null || x === "") {
         document.getElementById("passregmsg").style.display = "none";
     }
 }
 function validateConPassword() {
-    var x = document.getElementById("confirmpass").value;
+    var x = document.getElementById("cpassword").value;
     var y = document.getElementById("pass").value;
     if (x === null || x === "") {
         document.getElementById("passconmsg").style.display = "";
@@ -169,7 +169,7 @@ function validateConPassword() {
     }
 }
 function focusConPassword() {
-    var x = document.getElementById("confirmpass").value;
+    var x = document.getElementById("cpassword").value;
     if (x === null || x === "") {
         document.getElementById("passconmsg").style.display = "none";
     }
