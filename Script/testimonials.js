@@ -22,9 +22,9 @@ function puppy04() {
 function puppy05() {
 	document.getElementById("testimonial").innerHTML = "Puppy: Bella<br>Owner: Rachel Trottier<br><br>"
 		+ "My usual groomer is all the way out in Ladner. I wanted to go somewhere more local and I'm so"
-		+ " pleased with the service at Jojo's, I'm never going anyway else!";
+		+ " pleased with the service at Jojo's, I'm never going anywhere else!";
 }
 function puppy06() {
 	document.getElementById("testimonial").innerHTML = "Puppy: Ami<br>Owner: Connor Beauparlent<br>"
-	+ "<br>My little girl can back from her appointment pretty and proper. Thanks Jojo's!";
+	+ "<br>My little girl came back from her appointment pretty and proper. Thanks Jojo's!";
 }
