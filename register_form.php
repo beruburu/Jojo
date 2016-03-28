@@ -74,7 +74,7 @@
 	                    }
                     ?>
 
-                    <form id="registerForm" name="registerForm" method="post" action="register.php" onsubmit="return validateRegister()">
+                    <form id="registerForm" name="registerForm" method="post" action="register.php">
 						<fieldset>
 							<legend>Register</legend>
 							<div id="firstmsg" style="color:Red;display:none">Please enter your first name</div>
@@ -86,7 +86,7 @@
                   		  	<input name="lname" type="text" class="textfield" id="lname" size="60">
 							<br><br>
 							<div id="emailregmsg" style="color:Red;display:none">Please enter a valid email address</div>
-                    		<label for="login">Email: </label><br>
+                    		<label for="login">Login: </label><br>
                     		<input name="login" type="text" id="login" size="60">
 							<br><br>
 							<div id="passgmsg" style="color:Red;display:none">Please enter a password</div>

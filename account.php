@@ -85,7 +85,7 @@
 					<li><label>Last Name: </label></li>
 					<li><?=strtoupper($_SESSION['SESS_LAST_NAME'])?></li>
 					<br>
-					<li><label>Email: </label></li>
+					<li><label>Login: </label></li>
 					<li><?=strtoupper($_SESSION['SESS_LOGIN'])?></li>
 				</ul>
 				<form onsubmit="return userConfirm()" method="post" action="deactivate.php">
