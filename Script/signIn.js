@@ -16,7 +16,7 @@ function validateSignIn() {
     return send;
 }
 function validateEmail() {
-    var x = document.getElementById("signinemail").value;
+    var x = document.getElementById("login").value;
     if (x === null || x === "") {
         document.getElementById("emailmsg").style.display = "";
         return false;
@@ -26,14 +26,8 @@ function validateEmail() {
         return false;
     }
     else {
-        document.getElementById("emailmsg").style.display = "none";
+        document.getElementById("login").style.display = "none";
         return true;
-    }
-}
-function focusEmail() {
-    var x = document.getElementById("signinemail").value;
-        if (x === null || x === "") {
-            document.getElementById("emailmsg").style.display = "none";
     }
 }
 function validatePassword() {
@@ -45,12 +39,6 @@ function validatePassword() {
     else {
         document.getElementById("passmsg").style.display = "none";
         return true;
-    }
-}
-function focusPassword() {
-    var x = document.getElementById("password").value;
-    if (x === null || x === "") {
-        document.getElementById("passmsg").style.display = "none";
     }
 }
 function validateRegister() {

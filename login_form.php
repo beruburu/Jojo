@@ -70,13 +70,15 @@
 		                    unset($_SESSION['ERRMSG_ARR']);
 	                    }
                     ?>
-                    <form id="loginForm" name="loginForm" method="post" action="login.php">
+                    <form id="loginForm" name="loginForm" method="post" action="login.php" onsubmit="return validateSignIn()">
 						<fieldset>
 							<legend>Sign In</legend>
+					        <div id="emailmsg" style="color:Red;display:none">Please enter your email</div>
 							<label for="login">Email: </label><br>
 							<input name="login" type="text" id="login" size="60">
 							<br><br>
-							<label for="pass">Password: </label><br>
+					        <div id="passmsg" style="color:Red;display:none">Please enter your password</div>
+							<label for="password">Password: </label><br>
 							<input name="password" type="password" id="password" size="60">
 							<br><br>
 							<input type="submit" name="Submit" value="Sign In">
