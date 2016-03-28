@@ -79,13 +79,13 @@
 					    <div id="firstmsg" style="color:Red;display:none">Please enter your first name</div>
 						<label for="firstname">First Name:</label>
 						<br>
-						<input type="text" name="firstname" id="firstname" size="60" required="required">
+						<input type="text" name="firstname" id="fname" size="60" required="required">
 						<br>
 						<br>
 					    <div id="lastmsg" style="color:Red;display:none">Please enter your last name</div>
 						<label for="lastname">Last Name:</label>
 						<br>
-						<input type="text" name="lastname" id="lastname" size="60" required="required">
+						<input type="text" name="lastname" id="lname" size="60" required="required">
 						<br>
 						<br>
 					    <div id="phonemsg" style="color:Red;display:none">Please enter a valid phone number ex:1234567890</div>
@@ -97,7 +97,7 @@
 					    <div id="emailregmsg" style="color:Red;display:none">Please enter a valid email address</div>
 	                    <label for="email">Email:</label>
 					    <br>
-					    <input type="text" name="registeremail" id="registeremail" size="30" required="required">
+					    <input type="text" name="email" id="login" size="30" required="required">
 						<br>
 						<br>
 						<div id="dogmsg" style="color:Red;display:none">Please enter your dog's name</div>
