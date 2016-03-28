@@ -74,7 +74,7 @@
 	                    }
                     ?>
 
-                    <form id="registerForm" name="registerForm" method="post" action="register.php">
+                    <form id="registerForm" name="registerForm" method="post" action="register.php" onsubmit="return validateRegister()">
 						<fieldset>
 							<legend>Register</legend>
 							<div id="firstmsg" style="color:Red;display:none">Please enter your first name</div>
@@ -97,7 +97,7 @@
                         	<label for="cpassword">Confirm Password: </label><br>
                         	<input name="cpassword" type="password" id="cpassword" size="60">
 							<br><br>
-                        	<input type="submit" name="Submit" value="Register" /></td>
+                        	<input type="submit" name="Submit" value="Register"></td>
 						</fieldset>
                     </form>
             </div>
