@@ -67,15 +67,12 @@ function validateFirstName() {
         return true;
     }
 }
-<<<<<<< HEAD
-=======
 function focusFirstName() {
     var x = document.getElementById("fname").value;
     if (x === null || x === "") {
         document.getElementById("firstmsg").style.display = "none";
     }
 }
->>>>>>> 32e3773d0e15f3dfe51b27e7699be649a0aad389
 function validateLastName() {
     var x = document.getElementById("lname").value;
     if (x === null || x === "") {
@@ -87,15 +84,12 @@ function validateLastName() {
         return true;
     }
 }
-<<<<<<< HEAD
-=======
 function focusLastName() {
     var x = document.getElementById("lname").value;
     if (x === null || x === "") {
         document.getElementById("lastmsg").style.display = "none";
     }
 }
->>>>>>> 32e3773d0e15f3dfe51b27e7699be649a0aad389
 function validatePhone() {
     var x = document.getElementById("phone").value;
     if (x === null || x === "") {
@@ -126,15 +120,12 @@ function validateRegEmail() {
         return true;
     }
 }
-<<<<<<< HEAD
-=======
 function focusRegEmail() {
     var x = document.getElementById("login").value;
     if (x === null || x === "") {
         document.getElementById("emailregmsg").style.display = "none";
     }
 }
->>>>>>> 32e3773d0e15f3dfe51b27e7699be649a0aad389
 function validateRegPassword() {
     var x = document.getElementById("password").value;
     if (x === null || x === "") {
@@ -146,15 +137,12 @@ function validateRegPassword() {
         return true;
     }
 }
-<<<<<<< HEAD
-=======
 function focusRegPassword() {
     var x = document.getElementById("password").value;
     if (x === null || x === "") {
         document.getElementById("passregmsg").style.display = "none";
     }
 }
->>>>>>> 32e3773d0e15f3dfe51b27e7699be649a0aad389
 function validateConPassword() {
     var x = document.getElementById("cpassword").value;
     var y = document.getElementById("pass").value;
@@ -171,15 +159,12 @@ function validateConPassword() {
         return true;
     }
 }
-<<<<<<< HEAD
-=======
 function focusConPassword() {
     var x = document.getElementById("cpassword").value;
     if (x === null || x === "") {
         document.getElementById("passconmsg").style.display = "none";
     }
 }
->>>>>>> 32e3773d0e15f3dfe51b27e7699be649a0aad389
 function validateDog() {
     var x = document.getElementById("dogname").value;
     if (x === null || x === "") {
