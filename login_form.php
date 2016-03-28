@@ -82,7 +82,7 @@
 							<input name="password" type="password" id="password" size="60">
 							<br><br>
 							<input type="submit" name="Submit" value="Sign In">
-						</fieldest>
+						</fieldset>
 					</form>
             </div>
         </div>
