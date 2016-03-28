@@ -79,37 +79,37 @@
 					    <div id="firstmsg" style="color:Red;display:none">Please enter your first name</div>
 						<label for="firstname">First Name:</label>
 						<br>
-						<input type="text" name="firstname" id="fname" size="60" required="required">
+						<input type="text" name="firstname" id="fname" size="60">
 						<br>
 						<br>
 					    <div id="lastmsg" style="color:Red;display:none">Please enter your last name</div>
 						<label for="lastname">Last Name:</label>
 						<br>
-						<input type="text" name="lastname" id="lname" size="60" required="required">
+						<input type="text" name="lastname" id="lname" size="60">
 						<br>
 						<br>
 					    <div id="phonemsg" style="color:Red;display:none">Please enter a valid phone number ex:1234567890</div>
 						<label for="phone">Phone Number:</label>
 						<br>
-						<input type="text" name="phone" id="phone" size="60" required="required">
+						<input type="text" name="phone" id="phone" size="60">
 						<br>
 						<br>
 					    <div id="emailregmsg" style="color:Red;display:none">Please enter a valid email address</div>
 	                    <label for="email">Email:</label>
 					    <br>
-					    <input type="text" name="email" id="login" size="30" required="required">
+					    <input type="text" name="email" id="login" size="30">
 						<br>
 						<br>
 						<div id="dogmsg" style="color:Red;display:none">Please enter your dog's name</div>
 						<label for="dogname">Dog Name:</label>
 						<br>
-						<input type="text" name="dogname" id="dogname" size="60" required="required">
+						<input type="text" name="dogname" id="dogname" size="60">
 						<br>
 						<br>
 						<div id="breedmsg" style="color:Red;display:none">Please enter your dog's breed</div>
 						<label for="dogbreed">Dog Breed:</label>
 						<br>
-						<input type="text" name="dogbreed" id="dogbreed" size="60" required="required">
+						<input type="text" name="dogbreed" id="dogbreed" size="60">
 						<br>
 						<br>
                     <label for="Date">Choose a Date: </label>
@@ -160,6 +160,6 @@
 				<a href="http://www.freepik.com/free-photos-vectors/dog">Dog vector designed by Freepik</a>
 			</div>
 		</footer>
-		<script src="Script/signin.js"></script>
+		<script src="Script/signIn.js"></script>
     </body>
 </html>
