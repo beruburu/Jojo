@@ -67,12 +67,6 @@ function validateFirstName() {
         return true;
     }
 }
-function focusFirstName() {
-    var x = document.getElementById("fname").value;
-    if (x === null || x === "") {
-        document.getElementById("firstmsg").style.display = "none";
-    }
-}
 function validateLastName() {
     var x = document.getElementById("lname").value;
     if (x === null || x === "") {
@@ -82,12 +76,6 @@ function validateLastName() {
     else {
         document.getElementById("lastmsg").style.display = "none";
         return true;
-    }
-}
-function focusLastName() {
-    var x = document.getElementById("lname").value;
-    if (x === null || x === "") {
-        document.getElementById("lastmsg").style.display = "none";
     }
 }
 function validatePhone() {
@@ -120,12 +108,6 @@ function validateRegEmail() {
         return true;
     }
 }
-function focusRegEmail() {
-    var x = document.getElementById("login").value;
-    if (x === null || x === "") {
-        document.getElementById("emailregmsg").style.display = "none";
-    }
-}
 function validateRegPassword() {
     var x = document.getElementById("password").value;
     if (x === null || x === "") {
@@ -135,12 +117,6 @@ function validateRegPassword() {
     else {
         document.getElementById("passregmsg").style.display = "none";
         return true;
-    }
-}
-function focusRegPassword() {
-    var x = document.getElementById("password").value;
-    if (x === null || x === "") {
-        document.getElementById("passregmsg").style.display = "none";
     }
 }
 function validateConPassword() {
@@ -157,12 +133,6 @@ function validateConPassword() {
     else {
         document.getElementById("passconmsg").style.display = "none";
         return true;
-    }
-}
-function focusConPassword() {
-    var x = document.getElementById("cpassword").value;
-    if (x === null || x === "") {
-        document.getElementById("passconmsg").style.display = "none";
     }
 }
 function validateDog() {
