@@ -127,6 +127,6 @@
 				<a href="http://www.freepik.com/free-photos-vectors/dog">Dog vector designed by Freepik</a>
 			</div>
 		</footer>
-        <script src="Script/signIn.js"></script>
+        <script src="Script/signin.js"></script>
     </body>
 </html>
