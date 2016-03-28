@@ -77,18 +77,23 @@
                     <form id="registerForm" name="registerForm" method="post" action="register.php">
 						<fieldset>
 							<legend>Register</legend>
+							<div id="firstmsg" style="color:Red;display:none">Please enter your first name</div>
                  			<label for="fname">First Name: </label><br>
                        	 	<input name="fname" type="text" id="fname" size="60">
 							<br><br>
+							<div id="lastmsg" style="color:Red;display:none">Please enter your last name</div>
                     		<label for="lname">Last Name: </label><br>
                   		  	<input name="lname" type="text" class="textfield" id="lname" size="60">
 							<br><br>
+							<div id="emailregmsg" style="color:Red;display:none">Please enter a valid email address</div>
                     		<label for="login">Email: </label><br>
                     		<input name="login" type="text" id="login" size="60">
 							<br><br>
+							<div id="passgmsg" style="color:Red;display:none">Please enter a password</div>
                        	 	<label for="password">Password: </label><br>
                         	<input name="password" type="password" id="password" size="60">
 							<br><br>
+							<div id="passconmsg" style="color:Red;display:none">Passwords do not match</div>
                         	<label for="cpassword">Confirm Password: </label><br>
                         	<input name="cpassword" type="password" id="cpassword" size="60">
 							<br><br>
