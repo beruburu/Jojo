@@ -126,7 +126,8 @@
         <footer>
 		    <div id="footernav">
                 <ul>
-                    <li><a href="signIn.php">Sign in / Register</a></li>
+                    <li><a href="login_form.php">Login</a></li>
+                    <li><a href="register_form.php">Register</a></li>
                     <li><a href="aboutus.php">About Us</a></li>
                     <li><a href="testimonials.php">Testimonials</a></li>
                     <li><a href="services.php">Services</a>
