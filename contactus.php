@@ -98,7 +98,7 @@
                 <!-- This is an image of another dog. The picture will be 
                 changed in the future.
                 -->
-                <img src="Images/maltese.png" alt="maltese" width="250" height="250">
+                <img id="maltese" src="Images/maltese.png" alt="maltese" width="250" height="250">
 
             </div>
             
